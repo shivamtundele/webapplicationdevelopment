@@ -1,0 +1,1313 @@
+<!--
+
+
++--+--+-------------+--+--+
+|  |  | PUBLICATION |  |  |
++--+--+-------------+--+--+
+
+%---------------------------------------%
+
++-------------------------+
+| GUIDE TO EDIT THIS PAGE |
++-------------------------+
+
+NOTE: The Publication Years Are Arrange Serially From Top To Bottom In Chronological Order.
+
+1 Header And Heading Of the Page
+2    <div id="slider3_container" >  
+3        <div u="slides">
+4             <div>    THIS DIV CONTAINS YOUR PUBLICATION CONTENT WITH ITS YEAR.
+5                <div id="pub_para">
+6                    <p> 
+7                        WRITE PUBLICATION CONTENT HERE
+8                    </p>
+9                </div>                
+10                <div u="thumb">YEAR OF THE PUBLICATION, Example "2015"</div>  
+11            </div>
+            
+            "div" from Line 4-11 repeats throughout the page
+
+12        </div>
+13    </div>
+        
++--------------+
+| INSTRUCTIONS |
++--------------+
+1. To Add New Year Just Copy Any Of the "<div> </div>" tag completely from 5 TO 11 to the specified chronological position.
+2. To Add Publication Content To Any Of The Year Just Edit Line 7 Between "<p> </p>" tags.
+3. To Change/Edit/Modify Year Change Content Between "thumb" div at Line 10.
+4. To Search For A Specific Year Scroll Down This Page And Search For  "thumb" div at Line 10.
+5. Add <br><br> to give a line break between the content.
+
+-->
+<!DOCTYPE html>
+<html>
+    
+    <!-- 
+
+    +--+--+--------+--+--+
+    |  |  | HEADER |  |  |
+    +--+--+--------+--+--+
+
+    -->
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Mary Lou Maher</title> <!-- Edit between <title> tags to change website's name. -->
+        
+        <link href="css/style.css" type="text/css" rel="stylesheet">  <!-- This the Main CSS file for the Website -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">  <!-- Includes Font Awesome Styling Sheet For Footer Icons -->
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />   <!-- Favicon of the Website -->  
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">  <!-- Includes Fonts used in the Website from online Google API -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">   <!-- Includes BootStrap's online style sheet -->
+    </head>
+    
+<body>
+    
+    <!-- 
+
+    +--+--+--------------+--+--+
+    |  |  | MAIN CONTENT |  |  |
+    +--+--+--------------+--+--+
+    
+    -->
+
+    <script type="text/javascript" src="script/jssor.js"></script>
+    <script type="text/javascript" src="script/jssor.slider.js"></script>
+    
+    <script>
+        jssor_slider3_starter = function (containerId) 
+        {
+            var options = {
+                $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 5, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 2,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $AutoCenter: 3,                             //[Optional] Auto center thumbnail items in the thumbnail navigator container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 3
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1
+                    $SpacingX: 0,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 0,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 5,                              //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 0,                            //[Optional] The offset position to park thumbnail
+                    $Orientation: 2,                                //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                    $DisableDrag: false                              //[Optional] Disable drag or not, default value is false
+                }
+            };
+
+            var jssor_slider3 = new $JssorSlider$(containerId, options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider3.$Elmt.parentNode.clientWidth;
+                if (parentWidth) {
+                    var sliderWidth = parentWidth;
+
+                    //keep the slider width no more than 701
+                    sliderWidth = Math.min(sliderWidth, 701);
+
+                    jssor_slider3.$ScaleWidth(sliderWidth);
+                }
+                else
+                    $Jssor$.$Delay(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+    
+    <div id="site-container">   
+
+        <header class="clearfix">
+            
+            <div class="wrap"> 
+                <div class="nav-content-grid"> 
+                    <div class="nav-col-A" >
+                     <div id="logo">
+                    <img src="images/logo.jpg"  style="width: 80%;overflow: auto;"> <!-- Change Image Path here to Change the Main Logo of the Website -->
+                    </div>    
+                    </div>
+                    
+                    <div class="nav-col-B" >
+                            <!--
+                    +----------------------------------------+
+                    |            NAVIGATION MENU             |
+                    +----------------------------------------+
+                    | Includes Links To All The Other Pages. |
+                    +----------------------------------------+
+                    -->
+                    <nav id="prim-nav">
+                        <ul>      
+                            <li><a href="home.html"><b>HOME</b></a></li> <!-- Link to Home Page -->
+                            <li><a href="research.html"><b>RESEARCH</b></a></li> <!-- Link to Research Page -->
+                            <li><a href="teaching.html"><b>TEACHING</b></a></li> <!-- Link to Teaching Page -->
+                            <li><a href="publication.html"><b>PUBLICATIONS</b></a></li> <!-- Link to Publication Page -->
+                            <li><a href="cv.html"><b>CV</b></a></li> <!-- Link to CV Page -->
+                            <li><a href="http://maryloumaher.blogspot.com/" target="_blank"><b>BLOG</b></a></li> <!-- External Link to the Blog Website of Professor Mary Lou Maher -->
+                        </ul>
+                    </nav>    
+                    </div>
+                </div>
+                
+               
+            
+    
+            </div>
+
+            
+        </header>  
+  <br>  
+  
+  <div class="wrap">
+     
+      <h3>PUBLICATIONS</h3> <!-- Main Heading -->
+      <hr>
+      <br>
+      <h6>Click and Drag top/down the below menu bar to navigate through years.</h6>
+            
+    <div id="slider3_container" >
+        
+        <!-- Slides Container -->
+   
+        <div u="slides" style="cursor: move; position: absolute; left: 99px; top: 0px; margin-bottom: 200px; width: 1100px; height: 1500px; border: 0px solid gray; -webkit-filter: blur(0px); background-color: #fff; overflow: hidden;">
+            
+            
+               <!--
+                +-------------------+
+                | EDIT CONTENT HERE |
+                +-------------------+
+                -->
+                
+               <div>
+                <div id="pub_para">
+                    <p>
+                        Grace, K, Maher, ML, Fisher, D and Brady, K: (2014) A data-intensive approach to predicting creative designs based on novelty, value
+                        and surprise, International Journal of Design, Creativity and Innovation (to appear).
+                        <br><br>
+                        Maher, M.L. and Mahzoon, M.J. (2015). Finding Unexpected Patterns in Citizen Science Contributions Using Innovation Analytics,
+                        Conference on Collective Intelligence.
+                         <br><br>
+                        Maher, M.L., Merrick, K., Wang, B. (2015). Reasoning and Making Sense of Data in the Absence of Goals, 2015 Annual Conference on
+                        Advances in Cognitive Systems, Workshop on Goal Reasoning.
+                         <br><br>
+                        Grace, K. and Maher, M.L. (2015). Specific Curiosity as a Cause and Consequence of Transformational Creativity, Proceedings of the 5th
+                        International Conference on Computational Creativity.
+                         <br><br>
+                        Grace, K. and Maher, M.L. (2015). Surprise and Reformulation as Meta-cognitive Processes in Creative Design, 2015 Annual conference
+                        on Advances in Cognitive Systems.
+                         <br><br>
+                        Maher, M.L., Latulipe, C., Lipford, H. and Rorrer, A. (2015). Flipped Classroom Strategies for CS Education, Proceedings of SIGCSE
+                        Conference.
+                    </p>
+                </div>
+                <div u="thumb">2015</div>
+            </div>
+            
+                
+            <div>
+                <div id="pub_para">
+                    <p>
+                        Gu, N. and Maher, M.L. (2014) Designing Adaptive Virtual Worlds, De Gruyter <a href="http://maryloumaher.blogspot.com/" target="_blank">http://www.degruyter.com/view/product/430436</a> 
+                        <br><br>
+                        Paulini, M., Maher, M.L. and Murty, P. (2014) Motivating participation in online innovation communities, accepted for publication in International Journal of Web-Based Communities, 10(1).
+                         <br><br>
+                        Maher, ML., Preece, J., Yeh, T., Boston, C., Grace, K., Pasupuleti, A., Stangl, A. (2014) NatureNet: A Model for Crowdsourcing the Design of Citizen Science Systems, Poster Abstract in Proceedings of CSCW 2014.
+                         <br><br>
+                        Grace, K., Maher, M. L., Preece, J., Yeh, T., Stangl, A., & Boston, C. (2014). A process model for crowd-sourcing design: A case study in citizen science. In Gero, J.S. and Hanna, S (eds) Proceedings of Design Computing and Cognition 2014, University College London, pp 263--282.
+                        <br><br>
+                        Maher, M. L., Gonzalez, A. Grace, K., Clausner, T. (2014). Tangible Interaction Design: Can we design tangibles to enhance creative cognition?. In Gero, J.S. and Hanna, S (eds) Poster Proceedings of Design Computing and Cognition 2014, University College London.
+                        <br><br>
+                        Grace, K., Maher, M. L., Fisher, D. & Brady, K. (2014). Modelling expectation for evaluating surprise in design creativity. In Gero, J.S. and Hanna, S (eds) Proceedings of Design Computing and Cognition 2014, University College London, UK, pp 201-220.
+                        <br><br>
+                        Preece, J., Grace, K., Boston, C., Maher, M. L., Yeh, T. and Stangl, A. (2014) Crowdsourcing design and citizen science data using a tabletop in a nature preserve, European Conference on Social Media, University of Brighton, UK, pp 413-420.
+                        <br><br>
+                        Grace, K. and Maher, M.L. (2014). What to expect when you're expecting: The role of unexpectedness in computationally evaluating creativity, in Proceedings of International Conference on Computational Creativity. <a href="http://computationalcreativity.net/iccc2014/proceedings/" target="_blank">ICCC 2014 Proceedings</a> 
+                        <br><br>
+                        Grace, K. and Maher, M.L. (2014). Using Computational Creativity to Guide Data-intensive Scientific Discovery, in AAAI Workshop on Discovery Analytics.
+                    </p>
+                </div>
+                <div u="thumb">2014</div>
+            </div>
+            
+            <div>
+                     <div id="pub_para">
+                    <p>
+                        Maher, M.L., Brady, K. and Fisher, D. (2013). Computational Models of Surprise in Evaluating Creative Design In Proceedings of The Fourth International Conference on Computational Creativity, University of Sydney, pp 147-151. <a href="http://www.computationalcreativity.net/iccc2013/download/ICCC2013-Proceedings.pdf" target="_blank">ICCC 2013 Proceedings</a> 
+                        <br><br>
+                        Lee, J.H., Kim, M.J., and Maher, M.L. (2013). Designing for Interactive and Collective Mobile Creativity In Proceedings of Creativity and Cognition, Sydney Australia.
+                        <br><br>
+                        Singh, N., Tomitsch, M. and Maher, M.L. (2013). Understanding the Management and Need For Awareness of Temporal Information in Email, AUIC: Australasian User Interface Conference. <a href="http://www.cs.auckland.ac.nz/~burkhard/AUIC2013/" target="_blank"> AUIC2013 </a>
+                        <br><br>
+                        Paulini, M., Murty, P. and Maher, M.L. (2013). Design processes in collective innovation communities: a study of communication, in CoDesign: International Journal of CoCreation in Design and the Arts, 9(1):90-212.
+                    </p>
+                </div>
+                <div u="thumb">2013</div>
+            </div>
+            
+            <div>
+                      <div id="pub_para">
+                    <p>
+                        Kim, M.J., Maher, M.L. and Gu, N. (2012). Mobile and Pervasive Computing: The Future of Design Collaboration, In Chimay Anumba and Xiangyu Wang (ed.) Mobile and Pervasive Computing in Construction, John Wiley & Sons, Ltd. Pp 169-188.
+                        <br><br>
+                        Maher, M.L. (2012). Computational and Collective Creativity: Who s Being Creative?, In Proceedings of The Third International Conference on Computational Creativity, University College Dublin, pp 67-71.
+                         <br><br>    
+                        Maher, M.L. and Fisher, D.H. (2012). Using AI to Evaluate Creative Designs, In Proceedings of International Conference on Creative Design, pp 45-54.
+                         <br><br>    
+                        Maher, M.L. and Fisher, D.H. (2012). The Role of AI in Wisdom of the Crowds for the Social Construction of Knowledge on Sustainability, AAAI Spring Symposium 2012 Wisdom of the Crowd.
+                         <br><br>
+                        Maher, M.L., Paulini, M. and Murty, P. (2012). Motivating Collective Intelligence in Design: Is Social Intelligence Relevant? Working paper.
+                         <br><br>
+                        Macindoe, O., Maher, M.L., and Merrick, K. (2012). Agent Based Intrinsically Motivated Intelligent Environments, Mobile and Ubiquitous Computing: Status and Perspective, CRC Press Taylors & Francis Group, Auerbach.
+                         <br><br>
+                        Maher, M.L., Hammond, K., Pease, A., Pérez y Pérez, R., Ventura, D. and Wiggins, G. (2012). (Eds). Proceedings of The Third International Conference on Computational Creativity, University College Dublin.
+                    </p>
+                </div>
+                <div u="thumb">2012</div>
+            </div>
+            
+            <div>
+                      <div id="pub_para">
+                    <p>
+                        Visser, W. and Maher, M..L. (2011). Guest Editorial: The role of gesture in designing, in Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 25(3):221-235.<a href="http://maryloumaher.net/Pubs/2011pdf/AIEDAM-Editorial-Gesture.pdf" target="_blank">(pdf)</a>
+                        <br><br>
+                        Visser, W. and Maher, M..L. (2011). Guest Editor of Special Issue: The role of gesture in designing, in Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 25(3).<a href="http://maryloumaher.net/Pubs/2011pdf/AIEDAMSpecialIssueGesture.pdf" target="_blank">(pdf)</a>
+                        <br><br>
+                        Gu, N., Kim, M.J. and Maher, M.L. (2011). Technological advancements in synchronous collaboration: The effect of 3D virtual worlds and tangible user interfaces on architectural design, Automation in Construction, 20:270-278.
+                        <br><br>
+                        Macindoe, O., Maher, M.L., and Merrick, K. (2011). Agent Based Intrinsically Motivated Intelligent Environments, in Handbook on Mobile and Ubiquitous Computing: Innovations and Perspectives, CRC Press Taylors & Francis Group, Auerbach.
+                        <br><br>
+                        Maher, M.L. and Gero, J.S. (2011). Leadership in Design Science, In William Sims Bainbridge (Ed) Leadership in Science and Technology: A Reference Handbook, Sage.
+                        <br><br>
+                        Fisher, D.H. and Maher, M.L. (2011). Towards Grammars for Cradle-to-Cradle Design, AAAI Spring Symposia Series: Artificial Intelligence and Sustainable Design Technical Report SS11-02, AAAI Press, 39-44.<a href="http://maryloumaher.net/Pubs/2011pdf/SS11-02-009.pdf" target="_blank"> (pdf)</a>
+                        <br><br>
+                        Maher, M.L., Merrick, K. and Graham, B. (2011). Reasoning in the Absence of Goals, AAAI Fall Symposia Series: Advances in Cognitive Systems Technical Report, AAAI Press.<a href="http://maryloumaher.net/Pubs/2011pdf/Maher-Merrick.pdf" target="_blank"> (pdf)</a>
+                        <br><br>
+                        Fisher, D.H. and Maher, M.L. (2011). Free Play in Contemplative Ambient Intelligence, International Joint Conference on Ambient Intelligence, Springer.<a href="http://maryloumaher.net/Pubs/2011pdf/AMI.CameraReady.pdf" target="_blank"> (pdf)</a>
+                        <br><br>
+                        Paulini, M., Maher, M.L., and Murty, P. (2011). The Role of Collective Intelligence in Design: A protocol study of online design communication, in C. M. Herr, N. Gu, S. Roudavsky, M. A. Schnabel (eds.), Circuit Bending, Breaking and Mending: Proceedings of the 16th International Conference on Computer-Aided Architectural Design Research in Asia CAADRIA 2011, pp 687-696. <a href="http://maryloumaher.net/Pubs/2011pdf/11_PauliniMurtyMaher.pdf" target="_blank">(pdf) </a>
+                    </p>
+                </div>
+                <div u="thumb">2011</div>
+            </div>
+            
+            
+            <div>
+                      <div id="pub_para">
+                    <p>
+                        Maher, M.L. (2010) What People Talk About in Virtual Worlds, in William Sims Bainbridge (ed) Online Worlds: Convergence of the Real and the Virtual, Series: Human-Computer Interaction Series, Springer-Verlag ISBN: 978-1-84882-824-7
+                        <br><br>
+                        Maher, M.L. (2010). Designers and Collaborative Virtual Environments, In Xinagyu Wang and Jerry Tsai (Eds) Collaborative Design in Virtual Environments, Springer.<a href="http://maryloumaher.net/Pubs/2010pdf/CollabVirtualEnv2010.pdf" target="_blank"> (pdf) </a>
+                        <br><br>   
+                        Maher, M.L., Paulini, M. and Murty, P. (2010). Scaling up: From individual design to collaborative design to collective design, In John S Gero (Ed) Design Computing and Cognition DCC10, Springer, pp. 581-600. <a href="http://maryloumaher.net/Pubs/2010pdf/10_Maher_Paulini_Murty.pdf" target="_blank"> (pdf) </a>
+                        <br><br>   
+                        Murty, P., Paulini, M. and Maher, M.L. (2010). Collective Intelligence and Design Thinking, DTRS10: Design Thinking Research Symposium, Sydney, Australia. <a href="http://maryloumaher.net/Pubs/2010pdf/DTRS_CI_and_design_thinking_101102.pdf" target="_blank"> (pdf) </a>
+                        <br><br>
+                        Maher, M.L. (2010). Evaluating Creativity in Humans, Computers, and Collectively Intelligent Systems, DESIRE10: Creativity and Innovation in Design, Aurhus, Denmark. <a href="http://maryloumaher.net/Pubs/2010pdf/p22-maher-DESIRE.pdf" target="_blank"> (pdf) </a>
+                        <br><br>
+                        Maher, M.L. (2010). Design Creativity Research: From the Individual to the Crowd, in Toshiharu Taura and Yukari Nagai (eds) Design Creativity 2010, Springer-Verlag London, pp 41-47.<a href="http://maryloumaher.net/Pubs/2010pdf/p22-maher-DESIRE.pdf" target="_blank"> (pdf) </a>
+                        <br><br>
+                        Maher, M.L. (2010). From theory to practice - 39 opinions. Mary Lou Maher. In A Williams, MJ Ostwald & HH Askland (eds) Creativity, Design and Education. Theories Positions and Challenges, Sydney: ALTC
+                    </p>
+                </div>
+                <div u="thumb">2010</div>
+            </div>
+
+                        
+            <div>
+                <div id="pub_para">
+                    <p>
+                        <b>Book:</b>
+                        <br>
+                        Merrick, K. and Maher, M.L. (2009) Motivated Reinforcement Learning: Curious Characters for Multiuser Games, Springer-Verlag:Berlin/Heidelberg.
+                        <br><br>
+                        <b>Journal and Conference Papers:</b>
+                        <br><br>
+                        Merrick, K., Maher, M.L.: (2009) <a href="http://seal.itee.adfa.edu.au/~s3229187/publications/ABJ_merrick07.pdf" target="_blank"> Motivated Learning from Interesting Events: Adaptive, Multitask Learning Agents for Complex Environments</a>, Adaptive Behaviour, SAGE Publications, Peter M. Todd (Ed.), Vol 17(1):7-27.
+                        <br><br>
+                        Gul, L. F. and Maher, M. L. (2009) Co-Creating external design representations: comparing face-to-face sketching to designing in virtual environments, CoDesign International Journal of CoCreation in Design and the Arts, Vol 5(2):117-138.
+                        <br><br>
+                        Dong, A., Maher, M.L., Kim, M.J., Gu, N., and Wang, X. (2009) Construction defect management using a telematic digital workbench, Automation inn Construction, 18:814-824.
+                        <br><br>
+                        Maher M.L., Gu N., Kim M.J. (2009) Virtual worlds and tangible interfaces: Collaborative technologies that change the way designers think, CONVR 2009: Proceedings of the 9th International Conference on Construction Applications of Virtual Reality, Sydney, NSW.
+
+                    </p>
+                </div>
+                <div u="thumb">2009</div>
+            </div>
+ 
+            <div>
+                <div id="pub_para">
+                    <p>
+                        <b>Journal and Conference Papers:</b>
+                        <br><br>
+                        Kim, M. J. and Maher, M.L. (2008). The Impact of Tangible User Interfaces on Designers' Spatial Cognition, Human-Computer Interaction A Journal of Theoretical, Empirical, and Methodological Issues of User Science and of System Design, Volume 23 Issue 2, 101-137. <a href=" http://dx.doi.org/10.1080/07370020802016415" target="_blank"> http://dx.doi.org/10.1080/07370020802016415</a>
+                        <br><br>
+                        Kim, M. J. and Maher, M.L. (2008). The Impact of Tangible User Interfaces on Spatial Cognition During Collaborative Design, Design Studies, Vol 29/3 pp 222-253. <a href="http://dx.doi.org/10.1016/j.destud.2007.12.006" target="_blank"> http://dx.doi.org/10.1016/j.destud.2007.12.006</a>
+                        <br><br>
+                        Maher, M.L., Merrick, K., Saunders, R. (2008) Achieving Creative Behaviour Using Curious Learning Agents, AAAI Spring Symposium on Creative Intelligent Systems, March 26-28, Stanford University, pp 40-46.
+                        <br><br>
+                        Merrick, K., Maher, M-L., Saunders, R.: (2008) Achieving Adaptable Behaviour in Intelligent Rooms using Curious Supervised Learning Agents, CAADRIA 2008, Beyond Computer Aided Design, Chiang Mai, Thailand, pp 185-192.
+                        <br><br>
+                        Merrick, K., Maher, M.L: (2007) <a href="http://seal.itee.adfa.edu.au/~s3229187/publications/ace09-merrick-final.pdf" target="_blank"> Motivated Reinforcement Learning for Adaptive Characters in Open-Ended Simulation Games</a>, ACM SIGCHI International Conference on Advances in Computer Entertainment Technology, (ACE 2007), Salzburg, Austria, pp 127-134.
+                    </p>
+                </div>
+                <div u="thumb">2008</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                        <b>Journal and Conference Papers:</b>
+                        <br><br>
+                        Maher, M.L. and Fruchter, R. (2007). Support for design teams Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 21(3):201-202.
+                        <br><br>
+                        Maher, M.L., Rosenman, M. and Merrick, K. (2007). Agents For Multidisciplinary Design In Virtual Worlds, Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 21(3):267-277.
+                        <br><br>
+                        Gu, N and Maher, ML (2007). Designing Curious Places: Digital and Computing Technologies in the Workplace, in Calder J (ed), Public #3 - Worklife, Melbourne: WoodsBagot Research Press, pp. 101-115.
+                        <br><br>
+                        Maher, M.L. (2007). The Synergies Between Design Computing and Design Cognition, in L. Soibelman and B. Akinci (Eds) Computing in Civil Engineering Proceedings of the 2007 International Workshop on Computing in Civil Engineering, American Society of Civil Engineers, pp. 374-382.
+                        <br><br>
+                        Gu N., Gul L. F., Maher M. L. (2007). Designing and Learning Within the Design: A Case Study of Principles for Desiging and Teaching 3D Virtual Worlds, in CAADRIA 2007: Proceedings of the 12th International Conference on Computer-Aided Architectural Design Research in Asia, Nanjing, China, pp. 127-132.
+                        <br><br>
+                        Saunders, R., Maher, M.L. and Merrick, K. (2007) Learning Models for a Curious Place, in CAADRIA 2007 Proceedings of the 12th International Conference on Computer Aided Architectural Design Research in Asia, Nanjing, China, 19-21 April 2007, pp. 179-184.
+                        <br><br>
+                        Kim, M.J. and Maher, M.L. (2007). Collaborative Design in a Tabletop System employing Tangible User Interfaces, in Shen Weiming et al. (eds) The 11th International Conference on Computer Supported Cooperative Work in Design, April 26-28, Melbourne, Australia, pp. 192-197.
+                        <br><br>
+                        Maher, M. L., Merrick, K. and Saunders, R. (2007). From Passive to Proactive Design Elements, in Proceedings of the 12th International Conference on Computer Aided Architectural Design Futures, Sydney, Australia, 11-13 July 2007, pp. 447-460.
+                        <br><br>
+                        Smith, G., Gu, N. and and Maher, M.L. (2007). Designing Virtual Worlds For 3d Electronic Institutions: A Distributed And Heterogeneous Multi-Agent System, in Proceedings of the 12th International Conference on Computer Aided Architectural Design Futures, Sydney, Australia, 11-13 July 2007, pp. 387-400.
+                        <br><br>
+                        Gu, N and Maher, ML (2007). New Place Designs with Emerging Technologies, Association of Architecture Schools of Australasia 2007 Conference on Techniques and Technologies: Transfer and Transformation, the University of Technology, Sydney, pp. 88-95. Online Proceedings (ISBN: 978-0-9802840-4-1), <a href="http://epress.lib.uts.edu.au/dspace/handle/2100/501" target="_blank">http://epress.lib.uts.edu.au/dspace/handle/2100/501</a>
+                        <br><br>
+                        Gul, LF, Gu, N & Maher, ML (2007). Designing Virtual Worlds: A Case Study of Design Education in and of 3D Virtual Worlds, ConnectED'07: International Conference of Design Education, The University of New South Wales. CD Proceeding (ISBN: 978-0-646-4814-0), COFA, Sydney.
+                        <br><br>
+                        Merrick, K., Saunders, R., Maher, M-L: (2007) Curious Places: Curious, Proactive, Adaptive Built Environments, Symposium on Artificial Societies for Ambient Intelligence (ASAmI'07), Newcastle, UK, pp 34-36.
+                    </p>
+                </div>
+                <div u="thumb">2007</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Clark, S. and Maher, M.L. (2006). Collaborative Learning in a 3D Virtual Place: Investigating the Role of Place in a Virtual Learning Environment, Advanced Technology for Learning, Vol 3, No. 4: 208-0896. <a href="http://maryloumaher.net/Pubs/2006pdf/ATL_MLM_SC.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Lopez de Mantaras, R., McSherry, D., Bridge, D., Leake, D., Smyth, B., Craw, S., Faltings, B., Maher, M.L., Cox, M., Forbus, K., Keane, M., Aamodt, A., and Watson, I. (2006). Retrieval, Reuse, Revision and Retention in Case-Based Reasoning, in The Knowledge Engineering Review, Vol 20:3, 215-240.
+                    <br><br>
+                    Maher, M.L. and Kim, M.J. (2006). Studying Designers Using A Tabletop System For 3D Design With A Focus On The Impact On Spatial Cognition, in M. Fjeld and M. Takatsuka (eds) First IEEE International Workshop on Horisontal Interactive Human-Computer Systems, Tabletop 2006, Adelaide, Victoria, Australia, IEEE, pp 105-112.<a href="http://maryloumaher.net/Pubs/2006pdf/Maher_tabletop.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Maher, ML, Rosenman, M. Merrick, K. and Macindoe, O. (2006). DesignWorld: An Augmented 3D Virtual World for Multidisciplinary, Collaborative Design, in A. Kaga and R. Naka (eds) CAADRIA '06: Proceedings of the 11th Conference on Computer-Aided Architectural Design Research in Asia, Osaka, Japan, pp 133-142. <a href="http://maryloumaher.net/Pubs/2006pdf/caadria_DesignWorld.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Maher, ML, and Kim, MJ (2006). The Impact of Tangible User Interfaces on Collaborative Design, Joint International Conference on Computing and Decision Making in Civil and Building Engineering, Montreal, June 14-16, CD publication, no page numbers. <a href="http://maryloumaher.net/Pubs/2006pdf/ASCE_TUI.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Dong, A., Maher, M. L., & Daruwala, Y. (2006). Construction Defect Reporting Using Mobile and Digital Workbench Technologies. in H. Rivard & H. Melhem & E. Miresco (eds.) Joint International Conference on Computing and Decision Making in Civil and Building Engineering, Montréal, Canada: American Society of Civil Engineers, pp 3597-3606.<a href="http://maryloumaher.net/Pubs/2006pdf/ASCE-Mobile.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Merrick, K. and Maher, M.L. (2006). Motivated Reinforcement Learning for Non-Player Characters in Persistent Computer Game Worlds, in ACM SIGCHI International Conference on Advances in Computer Entertainment Technology, ACE 2006, July 14-16, Hollywood, CA, USA, CD publication, no page numbers.<a href="" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Maher, M.L., Merrick, K. and Macindoe, O. (2006). Intrinsically Motivated Intelligent Sensed Environments, in I Smith (ed) Intelligent Computing in Engineering and Architecture, 13th EG-ICE Workshop 2006, Springer Lecture Notes in Artificial Intelligence, Berlin, pp 455-475. <a href="http://www.springerlink.com/content/y371g64145r801t2/" target="_blank">(pdf)</a>
+                    <br><br>
+                    Gül, L.F. and Maher, M.L. (2006). Studying Design Collaboration in DesignWorld: An Augmented 3D Virtual World, in E Banissi, M Sarfraz, ML Huang and Q Wu (eds), Proceedings of 3rd International Conference on Computer Graphics, Imagining and Visualization Techniques and Applications (CGIV06), IEEE Computer Society, pp 471-476. <a href="http://maryloumaher.net/Pubs/2006pdf/CGIV-DesignWorld.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Maher, M.L., Gül, L.F. and Bilda, Z. (2006). Studying Design Behaviour in Collaborative Virtual Environments, In R. N. Pikaar & E. A. P. Koningsveld & P. J. M. Settels (eds), Proceedings of 16th World Congress on Ergonomics ( IEA2006 Congress). Maastricht, Netherlands: Elsevier, Ltd. CD publication, no page numbers.<a href="http://maryloumaher.net/Pubs/2006pdf/Maher-1248.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Maher, M.L., Bilda, Z. and Gül, L.F. (2006). Impact of Collaborative Virtual Environments on Design Behaviour , in JS Gero (ed), Design Computing and Cognition'06, Springer, Dordrecht, The Netherlands, pp 305-321. <a href="http://maryloumaher.net/Pubs/2006pdf/DCC06_MaherBildaGul.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Rosenman, M., Merrick, K., Maher, M.L. and Marchant, D. (2006). DESIGNWORLD: A Multidisciplinary Collaborative Design Environment Using Agents in a Virtual World, in JS Gero (ed), Design Computing and Cognition'06, Springer, Dordrecht, The Netherlands, pp 695-710.<a href="http://maryloumaher.net/Pubs/2006pdf/DCC06DesWorld.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Gül, L.F. and Maher, M.L. (2006). The Impact of Virtual Environments on Design Collaboration, Communicating Space(s) Proceedings of the 24th eCAADe Conference, Volos (Greece) 6-9 September 2006.<a href="http://maryloumaher.net/Pubs/2006pdf/eCAADe2006.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Kim, M.J. and Maher, M.L. (2006). The Effects of a Tangible User Interface On Designers' Spatial Cognition, in International Workshop on Spatial Cognition 2006, Breman, Germany, Springer-Verlag, Berlin, September 24-25. <a href="http://maryloumaher.net/Pubs/2006pdf/SC06_MijeongKim.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Rosenman, M., Maher, M.L., Merrick, K., and Macindoe, O. (2006). Multidisciplinary Collaboration using Agent-based Virtual Worlds, in Clients Driving Innovation: Moving Ideas into Practice, CRC for Construction Innovation, Queensland, Australia. <a href="http://maryloumaher.net/Pubs/2006pdf/CRC06-MultiViews.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Maher, ML, Bilda, Z, Gül, LF, Marchant, D and Yinghsiu, H. (2006). Comparing Distance Collaborative Designing Using Digital Ink Sketching and 3D Models in Virtual Environments, in K Brown, K Hampson and P Brandon (eds), Clients Driving Construction Innovation: Moving Ideas into Practice, Brisbane: Cooperative Research Centre for Construction Innovation, Icon.Net Pty Ltd. ISBN 1-7410712-8-3, p133-143.<a href="http://maryloumaher.net/Pubs/2006pdf/06_CRC-Studies.pdf" target="_blank">(pdf)</a>
+                    <br><br>
+                    Yoon, J.S. and Maher, M.L. (2006). Wayfinding Swarm Creatures Exploring the 3D Dynamic Virtual Worlds, in K Brown, K Hampson and P Brandon (eds), Clients Driving Construction Innovation: Moving Ideas into Practice, Brisbane: Cooperative Research Centre for Construction Innovation, Icon.Net Pty Ltd. ISBN 1-7410712-8-3, p156-162.
+                    </p>
+                </div>
+                <div u="thumb">2006</div>
+            </div>
+
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Rosenman M A, Smith G, Ding L, Marchant D and Maher M L (2005). Multidisciplinary Design in Virtual Worlds, In B Martens and A Brown (eds) Computer Aided Architectural Design Futures 2005, Springer, Dordrecht, Netherlands, pp.433-442.<a href="http://maryloumaher.net/Pubs/2005pdf/CAADFutures-Rosenman_etal.pdf" target="_blank">  (pdf)</a>
+                    <br><br>
+                    Gu, N. and Maher M L (2005). Dynamic Designs of 3D Virtual Worlds Using Generative Design Agents, In B Martens and A Brown (eds) Computer Aided Architectural Design Futures 2005, Springer, Dordrecht, Netherlands, pp 239-248. <a href="http://maryloumaher.net/Pubs/2005pdf/CAADFutures_Gu_Maher.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Kasmarik, K., Uther, W. and Maher, M.-L., 2005. Motivated Agents, In Proceedings of the Nineteenth International Joint Conference on Artificial Intelligence, Edinburgh, Scotland, pp 1505-1506. <a href="http://maryloumaher.net/Pubs/2005pdf/IJCAI05-Kasmarick_etal.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Kim, M.J. and Maher, M.L. (2005). Comparison Of Designers Using A Tangible User Interface And A Graphical User Interface and the Impact On Spatial Cognition, in Proceedings of International Workshop on Human Behaviour in Designing, Melbourne, Victoria, Australia, Key Centre of Design Computing and Cognition, University of Sydney, pp 81-94.<a href="http://maryloumaher.net/Pubs/2005pdf/HBiD2005_Kim_Maher.pdf" target="_blank">  (pdf)</a>
+                    <br><br>
+                    Maher, M.L., Bilda, Z. and Marchant, D. (2005). Comparing Collaborative Design Behavior In Remote Sketching And 3D Virtual Worlds,   in Proceedings of International Workshop on Human Behaviour in Designing, Melbourne, Victoria, Australia, Key Centre of Design Computing and Cognition, University of Sydney, pp 3-26.<a href="http://maryloumaher.net/Pubs/2005pdf/HBiD2005_maher_bilda.pdf" target="_blank">  (pdf)</a>
+                    <br><br>
+                    Maher, M.L. and Kim, M.J. (2005). Do Tangible User Interfaces Impact Spatial Cognition in Collaborative Design? , in Yuhua Luo (ed) Cooperative Design, Visualization and Engineering, Springer, Germany, pp 30-41.<a href="http://maryloumaher.net/Pubs/2005pdf/CDVE_Maher_Kim.pdf" target="_blank">  (pdf)</a>
+                    <br><br>
+                    Clark, S. and Maher, M.L. (2005). Learning and Designing in a Virtual Place: Investigating the Role of Place in a Virtual Design Studio, in Jose Duarte, Goncalo Ducla-Soares, and A. Zita Sampaio (eds) eCAADE 23 Digital Design: The Quest for New Paradigms, Technical University of Lisbon, Lisbon Portugal, pp 303-310. <a href="http://maryloumaher.net/Pubs/2005pdf/eCAADe2005_Clark_Maher.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Yoon, J.S. and Maher, M.L. (2005) A Swarm Algorithm for Wayfinding in Dynamic Virtual Worlds, in Proceedings of the ACM Symposium on Virtual Reality Software and Technology, Monterey, California.<a href="http://maryloumaher.net/Pubs/2005pdf/VRST2005_maher.pdf" target="_blank">  (pdf)</a>
+                    <br><br>
+                    Maher, M.L. and Merrick, L. (2005). Agent Models for Dynamic 3D Virtual Worlds, in T. Kunii, S.H. Soon, and A. Sourin (eds) CYBERWORLDS 2005, California: IEEE, pp 27-34. <a href="http://maryloumaher.net/Pubs/2005pdf/Cyberworlds_maher.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Macindoe, O. and Maher, M.L. (2005). Intrinsically Motivated Intelligent Rooms, in Tomoya Enokido, Lu Yan, Bin Xia, Daeyoung Kim, Yuanshun Dai, and Laurence T. Ynag (eds) Embedded and Ubiquitous Computing - EUC 2005 Workshops, Springer, Germany, pp189-197.<a href="" target="_blank">  (pdf)</a>
+                    <br><br>
+                    Maher, M.L., Merrick, K. and Macindoe, O. (2005). Can Designs Themselves Be Creative?, in John S Gero and Mary Lou Maher (eds) Computational and Cognitive Models of Creative Design VI, University of Sydney, pp 111-126. <a href="http://maryloumaher.net/Pubs/2005pdf/Ubiq_Comptg_Macindoe.pdf" target="_blank"> (pdf)</a>
+                    <br><br>
+                    Kim, M.J. and Maher, M.L. (2005). Creative Design And Spatial Cognition In A Tangible User Interface Environment, in John S Gero and Mary Lou Maher (eds) Computational and Cognitive Models of Creative Design VI, University of Sydney, pp 233-250. <a href="http://maryloumaher.net/Pubs/2005pdf/HI05_Mijeong_Maher.pdf" target="_blank"> (pdf)</a>
+                    </p>
+                </div>
+                <div u="thumb">2005</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Smith, G, Maher, ML and Gero, JS (2004) Towards Designing in Adaptive Worlds, Computer-Aided Design and Applications 1(1-4): 701-708.
+                    <br><br>
+                    Gu, N. and Maher, M.L. (2004) A Grammar for the Dynamic Design of Virtual Architecture Using Rational Agents, International Journal of Architectural Computing, 4(1): 489-501.
+                    <br><br>
+                    Maher, M.L., Liew, P-S, Gu, N. and Ding, L. (2004) An Agent Approach to Supporting Collaborative Design in 3D Virtual Worlds, Automation in Construction, 14:2(189-195).
+                    <br><br>
+                    Liew, P-S and Maher, M.L. (2004) Situated Case-Based Reasoning As A Constructive Memory Model For Design Reasoning, Proceedings of CAADRIA 2004, pp 199-208. <a href="http://maryloumaher.net/Pubs/2004pdf/02LiewMaher_CAADRIA2003.pdf" target="_blank">(pdf) </a>
+                    <br><br>
+                    Maher, M.L. and Kim, M. (2004) Supporting Design Using Self-Organizing Design Knowledge, Proceedings of CAADRIA 2004, pp 957-968. <a href="http://maryloumaher.net/Pubs/2004pdf/04%A5CAADRIA%A5MaherKim.pdf" target="_blank">(pdf) </a>
+                    <br><br>
+                    Gu, N. and Maher, M.L. (2004) Generating Virtual Architecture With Style, Proceedings of the Design Computing and Cognition ?04 Workshop on Design and Research Issues in Virtual Worlds. <a href="http://maryloumaher.net/Pubs/2004pdf/04%A5CAADRIA%A5MaherKim.pdf" target="_blank">(pdf) </a>
+                    <br><br>
+                    Maher, M.L., Rosenman, M., Ding, L., Smith, G., Marchant, D. and Dong, A. (2004) Supporting Collaboration And Multiple Views Of Building Models In Virtual Worlds, CRC Construction Innovation ? Clients Driving Innovation Conference.
+                    <br><br>
+                    Gero, J.S., Maher, M.L., Bilda, Z., Marchant, M., Namprempree, K., and Candy, L. (2004) Studying Collaborative Design in High Bandwidth Virtual Environments, CRC Construction Innovation ? Clients Driving Innovation Conference.
+                    <br><br>
+                    Gu, N. and Maher, M.L. (2004) Generating Virtual Architecture With Style, Proceedings of ANZAScA 2004.
+                    <br><br>
+                    Dong, A., Barker, D., Chen, E., Daruwala, Y., James, C. and Maher, M.L. (2004) Towards The Sentient: A Room That Senses, Thinks And Effects, Proceedings of ANZAScA 2004.
+                    <br><br>
+                    Maher, M.L., Yohann Daruwala, Y. and Chen, Edward (2004) A Design Workbench with Tangible Interfaces for 3D Design, in E. Edmonds and R. Gibson (eds) Interaction Symposium, UTS Printing Services, Sydney, pp 491-522.
+                    <br><br>
+                    Candy, L., Bilda, Z., Maher, M.L. and Gero, J.S. (2004) Evaluating Software Support for Video Data Capture and Analysis in Collaborative Design Studies, Proceedings of QualIT2004.
+                    </p>
+                </div>
+                <div u="thumb">2004</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M.L. and Tang, H. (2003), <a href="http://maryloumaher.net/Pubs/2002pdf/s00163-002-0016-ych.pdf" target="_blank">Co-Evolution as a Computational and Cognitive Model of Design</a>, Research in Engineering Design, 14(1):47-64.
+                    <br><br>
+                    Maher, M.L., Liew, P., and Gero, J.S. (2003) An Agent Approach to Data Sharing in Virtual Worlds and CAD, Proceedings of the CIB W78 Conference on IT in Construction, Auckland, New Zealand. <a href="http://maryloumaher.net/Pubs/2003pdf/Maher-CIB-W78.pdf" target="_blank">(pdf) </a> <a href="http://maryloumaher.net/Pubs/2003pdf/CIB-W78-2003.ppt" target="_blank">(slides) </a>
+                    <br><br>
+                    Maher, M.L. and Gu, N. (2003) Situated Design of Virtual Worlds Using Rational Agents, Proceedings of the 2nd International Conference on Entertainment Computing, Carnegie-Mellon University. <a href="http://maryloumaher.net/Pubs/2003pdf/Maher-ICEC03.pdf" target="_blank">(pdf)  </a><a href="http://maryloumaher.net/Pubs/2003pdf/ICEC.ppt" target="_blank">(slides) </a>
+                    <br><br>
+                    Gu, N. and Maher, M.L. (2003) A Grammar for the Dynamic Design of Virtual Architecture Using Rational Agents, Proceedings of CAADRIA 2003. <a href="http://maryloumaher.net/Pubs/2003pdf/caadria03.pdf" target="_blank">(pdf) </a>
+                    <br><br>
+                    Smith, G.J., Maher, M.L., and Gero, J.S. (2003) Designing 3D Virtual Worlds as a Society of Agents,in M-L Chiu, J-Y Tsou, T Kvan, M Morozumi and T-S Jeng (eds), Digital Design: Research and Practice, Kluwer, pp 105-114.<a href="http://maryloumaher.net/Pubs/2003pdf/CAADFutures113.pdf" target="_blank"> (pdf) </a>
+                    <br><br>
+                    Ding, L, Liew, P-S, Maher, ML, Gero, JS and Drogemuller, R (2003) An EDM approach to the integration of CAD and 3D virtual worlds, in M-L Chiu, J-Y Tsou, T Kvan, M Morozumi and T-S Jeng (eds), Digital Design: Research and Practice, Kluwer, pp 301-311.
+                    <br><br>
+                    Maher, M.L., Smith, G. and Gero, J.S. (2003) Design Agents in 3D Virtual Worlds, in R Sun (ed), IJCAI03 Workshop on Cognitive Modeling of Agents and Multi-Agent Interaction, IJCAI, Acapulco. pp 92-100.<a href="http://maryloumaher.net/Pubs/2003pdf/Maher-IJCAI-wksp.pdf" target="_blank"> (pdf) </a>
+                    <br><br>
+                    Maher, M.L., Liew, P-S, Gu, N., Ding, L. (2003) An Agent Approach to Supporting Collaborative Design in 3D Virtual Worlds, in Dokonal, W. and Hirschberg, U. (Eds), eCAADe21 Digital Design (Proceeding of eCAADe 2003), Graz University of Technology, Austria, pp47-52.<a href="http://maryloumaher.net/Pubs/2003pdf/ecaade_2003.pdf" target="_blank"> (pdf) </a>
+                    <br><br>
+                    Clark, S. and Maher, M.L. (2003) The Effects of a Sense of Place on the Learning Experience in a 3D Virtual World. In Cook, J. and McConnell, D. (Eds). Communities of Practice. Research Proceedings of the 10th Association for Learning Technologies Conference (ALT-C2003), pp 82-101.<a href="http://maryloumaher.net/Pubs/2003pdf/ALTC2003.pdf" target="_blank"> (pdf) </a>
+                    <br><br>
+                    Maher, M.L., Gero, J.S., Smith, G., and Gu, N. (2003) Cognitive Agents in 3D Virtual Worlds, International Journal of Design Computing, Vol 6, <a href="http://www.arch.usyd.edu.au/kcdc/journal/vol6" target="_blank">http://www.arch.usyd.edu.au/kcdc/journal/vol6</a>
+                    </p>
+                </div>
+                <div u="thumb">2003</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M.L. (2002). editor: Special Issue of International Journal of Design Computing: Designing Virtual Worlds, <a href="http://www.arch.usyd.edu.au/kcdc/journal/vol4 " target="_blank">http://www.arch.usyd.edu.au/kcdc/journal/vol4 </a>
+                    <br><br>
+                    Gu, N. and Maher, M.L. (2002). Designing Virtual Architecture: From Place to User-Centred Design, International Journal of Design Computing, Vol 4. <a href="http://www.arch.usyd.edu.au/kcdc/journal/vol4/gu/index.html " target="_blank">http://www.arch.usyd.edu.au/kcdc/journal/vol4/gu/index.html </a>
+                    <br><br>
+                    Maher, M.L. and Gero, J.S. (2002). <a href="http://maryloumaher.net/Pubs/2002pdf/ACADIA2002.pdf" target="_blank">Agent Models of Virtual Worlds </a>, Proceedings of ACADIA 2002, Pamona, CA.
+                    <br><br>
+                    Maher, M.L. and Gómez de Silva Garza, A.(2002). <a href="http://maryloumaher.net/Pubs/2002pdf/ACDM02.pdf" target="_blank">Adapting Problem Specifications and Design Solutions Using Co-evolution </a>, in Parmee, I.C. (ed.) Adaptive Computing in Design and Manufacture V, Springer-Verlag, London, England, pp. 257-271.
+                    <br><br>
+                    Maher, M.L. and Gu, N. (2002) <a href="http://maryloumaher.net/Pubs/2002pdf/ANZAScA2002.pdf" target="_blank">Virtual Worlds = Architectural Design + Computational Elements </a>, Proceedings of ANZAScA, Deakin University, Australia.
+                    <br><br>
+                    Maher, M.L. and Gu, N. (2002). <a href="http://maryloumaher.net/Pubs/2002pdf/WAID_maher_final.pdf" target="_blank">Design Agents In Virtual Worlds: A User-centred Virtual Architecture Agent </a>, in John S Gero and Frances MT Brazier (eds), Agents in Design 2002, MIT, Cambridge, MA, pp 23-38.
+                    <br><br>
+                    <b>Book Manuscript:</b>
+                    <br><br>
+                    Maher, M.L. (2002). <a href="http://www.arch.usyd.edu.au/~mary/coevolve" target="_blank">Modelling Design as Coevolution  </a>
+                    </p>
+                </div>
+                <div u="thumb">2002</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M. L., Gu, N. and Li, F. (2001),<a href="http://maryloumaher.net/Pubs/2001pdf/CAADRIA2001.pdf" target="_blank">Visualisation and object design in virtual architectureM</a> in J. S. Gero, S. Chase and M. Rosenman (eds), CAADRIA2001, Key Centre of Design Computing and Cognition, University of Sydney, pp. 39-50.
+                    <br><br>
+                    Maher, M. L., Simoff, S. and Clark, S. (2001) <a href="http://maryloumaher.net/Pubs/2001pdf/ECSCL.pdf" target="_blank">Learner-centred open virtual environments as places</a>, in P. Dillenbourg, A. Eurelings and K. Hakkarainen (eds), Proceedings of the European Prespectives on Computer-Supported Coolaborative Learning Conference, pp.437-444.
+                    <br><br>
+                    Clark, S. and Maher, M. L. (2001), <a href="http://maryloumaher.net/Pubs/2001pdf/CF2001.pdf" target="_blank">The role of place in designing a learner centered virtual learning environment</a>, CAADFutures 2001.
+                    <br><br>
+                    Clark, S., and Maher, M.L., (2001). <a href="http://maryloumaher.net/Pubs/2001pdf/abstractplay.pdf" target="_blank">A Student-Centred Virtual Learning Environment that provides a playful approach through a sense of place</a>. Playful Design Learning Forum, Adelaide University, Adelaide, South Australia, Australia, 13 - 14 November 2001.
+                    <br><br>
+                    Clark, S., and Maher, M.L., (2001). <a href="http://maryloumaher.net/Pubs/2001pdf/abstract_altc2001.pdf" target="_blank">The Role of Place in Creating a Learning Experience in Virtual Learning Environments</a>. Association for Learning Technology Conference, University of Edinburgh, Edinburgh, UK, 11 - 13 September 2001. <a href="http://www.ed.ac.uk/altc2001/" target="_blank">http://www.ed.ac.uk/altc2001/</a>
+                    <br><br>
+                    Gómez de Silva Garza, A. and Maher, M. L. (2001), <a href="http://maryloumaher.net/Pubs/2001pdf/ACADIA.pdf" target="_blank">Using evolutionary methods for design case adaptation</a>, in W. Jabi (ed) 2001: ACADIA Reinventing the Discourse, ACADIA, pp 180-191.
+                    <br><br>
+                    Gero, J.S., Maher, M.L. and Reffat, R. (2001), <a href="http://maryloumaher.net/Pubs/2001pdf/ASCAAD2001.pdf" target="_blank">Educational and Research Directions in Design Computing and Virtual Architecture</a>, ASCAAD2001.
+                    <br><br>
+                    Gómez de Silva Garza, A. and Maher, M. L. (2001), <a href="http://maryloumaher.net/Pubs/2001pdf/HeronIsland2001.pdf" target="_blank">GENCAD: A Hybrid Analogical/Evolutionary Model of Creative Design</a>, in Gero, J.S. and Maher, M.L. (eds) Proceedings of the 4th International Conference on Computational Models of Creative Design.
+                    <br><br>
+                    Smith, G., Maher, M.L. and Simoff, S. (2001). <a href="http://maryloumaher.net/Pubs/2001pdf/MaherAIEDAM.pdf" target="_blank">Knowledge Discovery in Architectural CAD Data</a>, unpublished working paper.
+                    <br><br>
+                    <b>Published Designs: </b>
+                    <br><br>
+                    Gu, N. and Maher, M. L.(2001), Architectural design of a virtual campus in Y-T. Liu (ed.), Defining Digital Architecture, Dialogue, pp. 158-161. (pdf)
+                    <br><br>
+                    Maher, M. L. and Gu, N. (2201), 3D virtual world, in M. Engeli and P. Carrard (eds), ETH World: Virtual and Physical Presence, Karl Schwegler AG, Zurich, pp. 146-147. (pdf1 2 3)
+                    <br><br>
+                    Maher, M. L., Simoff, S., Gu, N. and Lau, K. H. (2001), Virtual conference centre in M. Burry (ed.), Cyberspace: The World of Digital Architecture, Images Publishing, Mulgrave, Vic, pp. 192-195. (pdf)
+                    <br><br>
+                    Maher, M. L., Simoff, S., Gu, N. and Lau, K. H. (2001), A virtual office in M. Burry (ed.), Cyberspace: The World of Digital Architecture, Images Publishing, Mulgrave, Vic, pp. 196-199. (pdf)
+                    <br><br>
+                    <b>Submitted Design:</b>
+                    <br><br>
+                    Maher, M. L., Gu, N., and Feuerstein, M. (2001), <a href="http://www.arch.usyd.edu.au/~nigu6276/feidad">Virtual Museum</a>, FEIDAD.
+                    </p>
+                </div>
+                <div u="thumb">2001</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Books: </b>
+                    <br><br>
+                    Maher, M.L., Simoff, S., and Cicognani, A. (2000). <a href="http://www.arch.usyd.edu.au/chris_a/VDSWEB/" target="_blank">Understanding Virtual Design Studios</a>, Springer-Verlag, London.
+                    <br><br>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M. L. (2000), <a href="http://maryloumaher.net/Pubs/2000pdf/EwithC.pdf" target="_blank">A model of co-evolutionary design</a>, Engineering With Computers, 16: 195-208.
+                    <br><br>
+                    De Silva Garza, A.G. and Maher, M. L.. (2000) <a href="http://maryloumaher.net/Pubs/2000pdf/MaherAID00.pdf" target="_blank">A process model for evolutionary design case adaptation</a> in J. S. Gero (ed.), Artificial Intelligence in Design 00, .Kluwer Academic Publishers, Dordrecht, pp.393-412.
+                    <br><br>
+                    Gabriel, G. and Maher, M. L.(2000) <a href="http://maryloumaher.net/Pubs/2000pdf/CoDesGabriel.pdf" target="_blank">An analysis of design communication with and without computer mediation</a>, Proceedings of Co-Designing 2000, pp. 329-337.
+                    <br><br>
+                    Kvan, T., Maher, M. L., Cheng, N. Y-W. and Schmitt, G. (2000) Teaching architectural design in vitual studios, Proceeding of ASCE 2000, Volume 1, pp. 162-169.
+                    <br><br>
+                    Li , F. and Maher, M.L.(2000),<a href="http://maryloumaher.net/Pubs/2000pdf/ACADIA2000.pdf" target="_blank">Representing virtual places - A design model for metaphorical design</a>, ACADIA2000.
+                    <br><br>
+                    Li , F. and Maher, M.L.(2000),<a href="http://maryloumaher.net/Pubs/2000pdf/AASAMaher.pdf" target="_blank">Teaching in a virtual campus as a designed place in an architecture faculty</a>, Proceeding of AASA, pp. 109-117.
+                    <br><br>
+                    Maher, M. L., Simoff, S. and Gabriel, G. C. (2000) <a href="http://maryloumaher.net/Pubs/2000pdf/pdc2000Mark4.pdf" target="_blank">Participatory design and communication in virtual environments</a>, in T. Cherkasky, J. Greenbaum, P. Mambrey and J. Kabber Pors (eds), PDC2000 Proceedings of the Participatory Conference, pp. 127-134.
+                    <br><br>
+                    Maher, M. L., Simoff, S., Gu, N. and Lau, K. H. (2000) <a href="http://maryloumaher.net/Pubs/2000pdf/caadria2000.pdf" target="_blank">Designing virtual architecture</a>, Proceeding of CAADRIA2000, pp. 481-490.
+                    <br><br>
+                    Simoff, S. and Maher, M.L. (2000). <a href="http://maryloumaher.net/Pubs/2000pdf/JDS_final.pdf" target="_blank">Analysing participation in collaborative design environments</a>, Design Studies, 21(2):119-144.
+                    <br><br>
+                    Simoff, S. and Maher, M. L.(2000), <a href="http://maryloumaher.net/Pubs/2000pdf/asce2000.pdf" target="_blank">Semantic visualisation in design computing</a>, Proceeding of ASCE 2000, Volume 2, pp. 898-905.
+                    <br><br>
+                    Maher, M.L.and Simoff, S. (2000) <a href="http://maryloumaher.net/Pubs/2000pdf/Simoff.pdf" target="_blank">Collaboratively designing within the design</a>, Proceedings of Co-Designing 2000, pp. 391-399.
+                    </p>
+                </div>
+                <div u="thumb">2000</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Gabriel, G. and Maher, M. L. (1999) <a href="http://maryloumaher.net/Pubs/pdf/DESThink99.pdf" target="_blank"> Does computer mediation affect design representation?  </a>Proceedings of Design Thinking Symposium.
+                    <br><br>
+                    Gabriel, G. and Maher, M. L. (1999) <a href="http://maryloumaher.net/Pubs/pdf/acadia99.pdf" target="_blank"> Coding and modelling communication in architectural collaborative design </a>, in O. Ataman and J Bermudez (eds) ACADIA '99, ACADIA, pp. 152-166.
+                    <br><br>
+                    Gomez de Silva Garza, A. and Maher, M. L. (1999) <a href="http://maryloumaher.net/Pubs/pdf/iccbr99.pdf" target="_blank"> An evolutionary approach to case adaption </a>, Proceedings of Third International Conference on Case-Based Reasoning, Springer-Verlag, pp. 162-172.
+                    <br><br>
+                    Gomez de Silva Garza, A. and Maher, M. L. (1999) <a href="http://maryloumaher.net/Pubs/pdf/CAADRIA99.pdf" target="_blank"> Evolving design layout cases to satisfy Feng Shui constraints </a>, in G. Jingwen and W. Zhaoji (eds) Proceedings of CAADRI99, Shanghai Scientific and Technological Literature Publishing House, pp. 115-124.
+                    <br><br>
+                    Maher, M.L. (1999). <a href="http://kn.cilt.org/cscl99/A47/A47.HTM" target="_blank"> Designing the virtual campus as a virtual world </a>, Computer Supported Collaborative Learning (CSCL99), pp 376-382.
+                    <br><br>
+                    Maher, M. L. (1999) <a href="http://maryloumaher.net/Pubs/pdf/CSCWD99.pdf" target="_blank"> Variations on a Virtual Design Studio  </a> in J-P. Barthes, Z. Lin and M. Ramos (eds) Proceedings of Fourth International Workshop on CSCW in Design, Universite de Technologie de Compiegne, pp.159-165.
+                    <br><br>
+                    Maher, M.L., Simoff, S., Gu, N. and Lau, K.H. (1999). Two Approaches to a Virtual Design Office, Proceedings of DCNet99, <a href="http://www.arch.usyd.edu.au/kcdc/journal" target="_blank"> http://www.arch.usyd.edu.au/kcdc/journal </a>
+                    <br><br>
+                    Maher, M.L., Skow, B., and Cicognani, A. (1999) Designing the virtual campus, Design Studies 20: 319-342 
+                    <br><br>
+                    Maher, M.L. and Wu, P. (1999). <a href="http://maryloumaher.net/Pubs/pdf/AI99.pdf" target="_blank"> Reconsidering Fitness and Convergence in Co-Evolutionary Design </a>, in Norman Foo (ed), Advanced Topics in Artificial Intelligence, Springer, p 488.
+                    <br><br>
+                    Simoff, S.J. and Maher, M. L. (1999). Knowledge Discovery in Hypermedia Case Libraries - A Methodological Framework, Proceedings of the Knowledge Acquisition Workshop, 12th Australian Joint Conference on Artificial Intelligence, AI'99, Sydney, Australia
+                    </p>
+                </div>
+                <div u="thumb">1999</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M. L., Cicognani, A. and Simoff, S. (1998) An experimental study of computer mediated collaborative design, International Journal of Design Computing, 1. <a href="http://www.arch.usyd.edu.au/kcdc/journal" target="_blank"> http://www.arch.usyd.edu.au/kcdc/journal</a>
+                    <br><br>
+                    Simoff, S. and Maher, M.L. (1998) Designing with the activity/space ontology, in JS Gero and F Sudweeks (eds) Artificial Intelligence in Design 98, Kluwer Academic, Dordrecht, 23-44. 
+                    <br><br>
+                    Maher, M.L. (1998) CBR as a framework for design, Proceedings of AAAI Workshop on Case-Based Reasoning Integrations, Madison, Wisconsin. 
+                    <br><br>
+                    Maher, M.L. and Simoff, S. (1998) Knowledge discovery from multimedia case libraries, in I. Smith (ed) Artificial Intelligence in Structural Engineering, Springer, Berlin, 197-213. <a href="http://dx.doi.org/10.1007/BFb0030452" target="_blank"> Springer online</a>
+                    <br><br>
+                    Simoff, S. and Maher, M.L. (1998)<a href="http://maryloumaher.net/Pubs/pdf/asce98.pdf" target="_blank">  Ontology-based multimedia data mining for design information retrieval</a>, Proceedings of ACSE Computing Congress, Cambridge. 
+                    <br><br>
+                    Maher, M.L. and Wu, P. (1998) Fitness and convergence in coevolutionary design, Proceedinngs of AI'98, Brisbane, Queensland. 
+                    <br><br>
+                    Maher, M.L. and Wu, P.X. (1998) Creativity through coevolutionary design, Proceedings International Conference on Creative Design. 
+                    <br><br>
+                    Gomez de Silva Garza, A. and Maher, M.L. (1998) The role of non-determinism in computational models of creativity, Proceedings International Conference on Creative Design. 
+                    <br><br>
+                    Cicognani, A. and Maher, M.L. (1998) Two approaches to designing virtual worlds, Proceedings of Design Computing on the Net 98, <a href="http://www.arch.usyd.edu.au/kcdc/journal" target="_blank"> http://www.arch.usyd.edu.au/kcdc/journal. </a>
+                    <br><br>
+                    Simoff, S. and Maher, M.L. (1998) Deriving ontology from design cases, Proceedings of Design Computing on the Net 98, <a href="http://www.arch.usyd.edu.au/kcdc/journal" target="_blank"> http://www.arch.usyd.edu.au/kcdc/journal.    </a>
+                    </p>
+                </div>
+                <div u="thumb">1998</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Books:</b>
+                    <br><br>
+                    Maher, M. L. and Pu, P. (eds) (1997). Issues and Applications of Case-Based Reasoning to Design, Lawrence Erlbaum Associates.  
+                    <br><br>
+                    <b>Book Chapters:</b>
+                    <br><br>
+                    Maher, M.L. (1997). CASECAD and CADSYN: Implementing case retrieval and case adaptation, in M.L. Maher and P. Pu (eds) Issues and Applications of Case-Based Reasoning in Design, Lawrence Erlbaum.  
+                    <br><br>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Poon, J. and Maher, M.L. (1997). <a href="http://maryloumaher.net/Pubs/pdf/AIinEng.pdf" target="_blank"> Co-evolution and Emergence in Design. Artificial Intelligence in Engineering</a>, 11(3): 319-327.(447K)  
+                    <br><br>
+                    Cicognani, A. and Maher, M.L. (1997). <a href="http://www.arch.usyd.edu.au/~anna/papers/caadf97.html" target="_blank"> Design speech acts: "how to do things with words" in virtual communities</a>. in Proceedings of CAADFutures97, Munich.  
+                    <br><br>
+                    Maher, M.L., Simoff, S.J. and Cicognani, A. (1997). Observations from an experimental study of computer-mediated collaborative design. Preprints Formal Aspects of Collaborative CAD, pp. 165-186.  
+                    <br><br>
+                    Simoff, S.J. and Maher, M. L. (1997) <a href="http://ausweb.scu.edu.au/proceedings/simoff/index.html" target="_blank"> Web-mediated courses: the revolution in on-line design eductation</a>. In H. Ashman, P. Thistlewaite, R. Debreceny, A. Ellis (eds), Into the Mainstream - the Web in Australia, Proceedings of AusWeb97, pp. 143-154. http://ausweb.scu.edu.au/proceedings/simoff/index.html.  
+                    <br><br>
+                    Maher, M.L. and Skow, B. (1997). <a href="http://www.arch.su.edu.au/~bradford/VCpaper/index.html" target="_blank"> Learning Inside the Virtual Campus</a>, presented at The Global University: a 21st Century View, Melbourne.  
+                    <br><br>
+                    Maher, M.L. and Skow, B. (1997). <a href="http://ultibase.rmit.edu.au/" target="_blank"> Learning Inside the Virtual Campus</a>, ultiBASE (http://ultibase.rmit.edu.au), Sept. 
+                    <br><br>
+                    Poon, J. and Maher, M.L. (1997). Co-evolution in design: A case study of the Sydney Opera House, in Y-T Liu, J-Y Tsou, and J-H Hou (eds) CAADRIA '97, Hu's Publisher, Taipei, Taiwan, pp 439-448.<a href="" target="_blank"> (PDF File)</a>
+                    <br><br>
+                    Maher, M.L., Cicognani, A., and Simoff, S. (1997). An Experimental Study of Computer Mediated Collaborative Design, International Journal of Design Computing <a href="http://maryloumaher.net/Pubs/pdf/caadria97.pdf" target="_blank"> (PDF File) </a>(http://www.arch.usyd.edu.au/kcdc/journal), Vol 1.
+                    <br><br>
+                    Maher, M.L. and Simoff, S. (1997). Knowledge discovery in multimedia design case bases. In B. Verma and X. Yao (eds), Proceedings ICCIMA'97, Griffith University, Gold Coast, pp. 6-11.<a href="http://maryloumaher.net/Pubs/pdf/CMCD_IFIP97.pdf" target="_blank"> (PDF File)</a>
+                    <br><br>
+                    Simoff, S.J. and Maher, M. L. (1997) Web-mediated design courses: challenges and realities in teaching electronic collaboration. Proceedings of the IEEE Workshops on Enabling Technologies: Infrastructure for Collaborative Enterprises, WETICE'97.<a href="http://maryloumaher.net/Pubs/pdf/ICCIMA97.pdf" target="_blank"> (PDF File)</a>
+                    <br><br>
+                    Simoff, S.J. and Maher, M.L. (1997). Design education via web-based virtual environments. In T. Adams (ed.) Computing in Civil Engineering, Proceedings of the Fourth Congress of Computing in Civil Engineering, ASCE, N.Y.,. pp. 418-425.<a href="http://maryloumaher.net/Pubs/pdf/asce97.pdf" target="_blank"> (PDF File)</a>
+                    <br><br>
+                    Gero, J. and Maher, M.L. (1997).<a href="http://www.arch.usyd.edu.au/~john/publications/1997/ecaade/index.html" target="_blank"> A framework for research in design computing</a>, in Proceedings of ECAADE97, Vienna. 
+                    <br><br>
+                    Cicognani, A. and Maher, M.L. (1997). Design speech acts: "how to do things with words" in virtual communities. in Proceedings of CAADFutures97, Munich.
+                    <br><br>
+                    Maher, M.L. and Rutherford, J. (1997) A Model for Synchronous Collaborative Design Using CAD and Database Management, Research in Engineering Design, 9(2):85-98. 
+                    <br><br>
+                    Maher, M.L., Simoff, S.J. and Cicogniani A. (1997) <a href="http://www.arch.usyd.edu.au/~mary/VDSjournal/index.html" target="_blank"> Potentials and Limitations of Virtual Design Studio</a>. Interactive Construction On-line. 
+                    <br><br>
+                    Maher, M.L., Simoff, S.J. and Mitchell, J. (1997). Formalising building requirements using an activity/spac emodel Automation in Construction, 6(1997) 77-95. 
+                    <br><br>
+                    Gunaratnum, D. and Maher, M.L. (1997). Case-based design tool for teaching structural design, Proceedings of the 1997 ANZAScA Conference, Brisbane. 
+                    <br><br>
+                    Maher, M.L. (1997). SAM: A multimedia case library of structural designs <a href="http://maryloumaher.net/Pubs/pdf/CAADRIA-SAM.pdf" target="_blank"> (PDF File)</a>, in Y-T Liu, J-Y Tsou, and J-H Hou (eds) CAADRIA '97, pp 5-14. 
+                    </p>
+                </div>
+                <div u="thumb">1997</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M.L., Poon, J. and Boulanger, S. (1996). Formalising Design Exploration as Co-Evolution: A Combined Gene Approach, in J.S.Gero and F. Sudweeks (eds) Advances in Formal Design Methods for CAD, Chapman & Hall, pp 1-28.
+                    <br><br>
+                    Maher, M.L. and Poon, J. (1996). <a href="http://maryloumaher.net/Pubs/pdf/MicroCE96.pdf" target="_blank"> Modelling design exploration as co-evolution </a>, Microcomputers in Civil Engineering,11(3):195-210.
+                    <br><br>
+                    Poon, J. and Maher, M.L. (1996). <a href="http://www.arch.su.edu.au/~mary/aid96.ps" target="_blank"> Emergent Behaviour in Co-Evolutionary Design </a>. in JS Gero (ed) Artificial Intelligence in Design '96, Kluwer Academic.
+                    <br><br>
+                    Poon, J. and Maher, M.L. (1996). Co-evolution and Emergence in Design. AID'96 Workshop - Evolutionary Systems in Design.
+                    <br><br>
+                    Maher, M.L., Cicognani, A., Simoff, S. (1996). <a href="http://www.arch.su.edu.au/~mary/wetice-cmcd.htm" target="_blank"> An experimental study of computer-mediated collaborative design </a>, 1996 IEEE WETICE Workshop on Shared Design and Prototyping Environments, Stanford.
+                    <br><br>
+                    Maher, M.L., Simoff, S., Cicognani, A. (1996). <a href="http://www.arch.su.edu.au/~mary/VDSjournal/index.html" target="_blank"> The Potential and Current Limitations in a Virtual Design Studio </a>, Interactive Construction Online.
+                    <br><br>
+                    Gomez de Silva Garza, A., and Maher, M.L. (1996) <a href="http://www.arch.su.edu.au/~andres/kbs96.ps" target="_blank"> Design by Interactive Exploration Using Memory-Based Techniques </a>. Knowledge-Based Systems. Volume 9, Number 1. 
+                    <br><br>
+                    Maher, M.L. and Gomez de Silva Garza, A. (1996) <a href="http://www.arch.su.edu.au/~andres/asce-cbr96.ps" target="_blank"> Design Case Adaptation Using Genetic Algorithms </a>. In J. Vanegas (ed.). Computing in Civil Engineering: Proceedings of the Third Congress held in conjunction with A/E/C Systems '96. American Society of Civil Engineers. June 1996. 
+                    <br><br>
+                    Maher, M.L. and Gomez de Silva Garza, A. (1996b) <a href="http://www.arch.su.edu.au/~andres/ieee-expert96.ps" target="_blank"> Developing Case-Based Reasoning for Structural Design </a>. IEEE Expert. Volume 11, Number 3 pp42-52. 
+                    <br><br>
+                    Maher, M.L. and Gomez de Silva Garza, A. (1996c) <a href="http://www.arch.su.edu.au/~andres/glasgow96.ps" target="_blank"> The Adaptation of Structural System Designs Using Genetic Algorithms </a>. Proceedings of the International Conference on Information Technology in Civil and Structural Engineering Design--Taking Stock and Future Directions, Glasgow, Scotland. August 1996. 
+                    <br><br>
+                    Saad, M. and Maher, M.L. (1996) Shared understanding in computer-supported collaborative design, CAD Journal, 28(3): 183-192.
+                    <br><br>
+                    Gero, J. S. and Maher, M.L. (1996). Current CAAD Research at the Key Centre of Design Computing University of Sydney, Proceedings CAADRIA '96, University of Hong Kong, pp 33-50. 
+                    <br><br>
+                    Maher, M.L., Rutherford, J. and Gero, J.S. (1996). Graduate design Computing Teaching at the University of Sydney, Proceedings CAADRIA '96, University of Hong Kong, pp 229-240. 
+                    <br><br>
+                    Maher, M.L. and Poon, J. (1996). Co-Evolution of Design Specifications and Design Solution, Proccedings of International Conference on Computing in Civil Engineering, Anaheim. 
+                    <br><br>
+                    Maher, M.L. Multimedia Case Libraries: The easy way to CBR in design?, AID '96 Workshop on Case-Based Reasoning in Design, Stanford.
+                    </p>
+                </div>
+                <div u="thumb">1996</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>On the Web:</b>   
+                    <i>Virtual Design Studios:</i>
+                    Maher, M.L. and Saad, M. (1995). <a href="http://www.arch.su.edu.au/kcdc/design_studio/papers/anzasca95.html" target="_blank">The experience of virtual design studios at The University of Sydney </a>, 1995 ANNZAScA Conference, University of Canberra.
+                    <br><br>
+                    Maher, M.L. (1995). <a href="http://www.arch.su.edu.au/kcdc/design_studio/papers/deca95.html" target="_blank">Using the internet to teach in a virtual design studio</a>, DECA 95: Information Technology and Its Influence on Design Education, RMIT, Melbourne.  
+                    <br><br>
+                     <b>Books:</b>
+                    <br><br>
+                    Maher, M.L., Balachandran, B., Zhang, D.M. (1995). Case-Based Reasoning in Design, Lawrence Erlbaum Associates.  
+                    <br><br>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M.L., Boulanger, S., Poon, J., and Gomez de Silva Garza, A. (1995). Assessing computational methods with a framework for creative design processes, Computational Models of Creative Design, Heron Island, December. 
+                    <br><br>
+                    Maher, J. and Poon, J. (1995). Evolving a fitness landscape for design exploraiton, International Conference on Evolutionary Computing, Perth, Australia. 
+                    <br><br>
+                    Maher, M.L. (1995). Using case-based reasoning for design media management, Computing in Civil Engineering, ASCE, Atlanta. 
+                    <br><br>
+                    Saad, M. and Maher, M.L. (1995). Exploring the possibilities for computer-supported collaborative designing, CAAD Futures'95, Singapore. 
+                    <br><br>
+                    Maher, M.L. and Saad, M. (1995). The experience of virtual design studios at The University of Sydney, 1995 ANNZAScA Conference, University of Canberra. 
+                    <br><br>
+                    Maher, M.L. (1995). Using the internet to teach in a virtual design studio, DECA 95: Information Technology and Its Influence on Design Education, RMIT, Melbourne 
+                    
+                    </p>
+                </div>
+                <div u="thumb">1995</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Books:</b>
+                    <br><br>
+                    Fenves, S., Flemming, U., Hendrickson, C., Maher, M.L., Quadrel, R., Terk, M., Woodbury, R. [1994]. Computer Integrated Building Design, Academic Press, 242p  
+                    <br><br>
+                    <b>Book Chapters:</b>
+                    <br><br>
+                    Alem, L. and Maher, M.L. (1994). A model of creative design using a genetic metaphor, in T. Dartnall (ed.) Artificial Intelligence and Creativity: An Interdisciplinary Approach, Kluwer, pp 281-291.  
+                    <br><br>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M.L. and Balachandran, B. (1994). A multimedia approach to case-based structural design, ASCE Journal of Computing in Civil Engineering, 8(3): 359-376. 
+                    <br><br>
+                    Maher, M.L. and Li, H. (1994). Learning design concepts using machine learning techniques, (AI EDAM) Special Issue on Machine Learning in Design, 8(2):95-111. 
+                    <br><br>
+                    Maher, M.L., Brown, D, and Duffy, A. (1994). Special issue: machine learning in design, Guest Editorial, (AI EDAM) , 8(2):81. 
+                    <br><br>
+                    Rosenman, M., Gero, J.S., and Maher, M.L. (1994). Knowledge-based design research at the Key Centre of Design Computing, in G. Carrara and Y. Kalay (eds) Knowledge-Based Computer-Aided Architrectural Design, Elsevier Science. (also published in Automation in Construction 3:229-237.) 
+                    <br><br>
+                    Maher, M.L. (1994). Collaboration and computer aided engineering, Bridging the Generations: An International Workshop on the Future Directions of Computer-Aided Engineering, Carnegie Mellon University, Pittsburgh, PA, pp137-142. 
+                    <br><br>
+                    Maher, M.L. and Balachandran, B. (1994). Flexible retrieval strategies for case-based design, Artificial Intelligence in Design'94, J. Gero (ed.), Kluwer Academic Press, pp 163-180. 
+                    <br><br>
+                    Maher, M.L. (1994). Representation of case memory for structural design, Computing in Civil Engineering, ASCE, 2030-2037. 
+                    <br><br>
+                    Maher, M.L. (1994). Creative design using a genetic algorithm, Computing in Civil Engineering, ASCE, pp 2014-2021. 
+                    <br><br>
+                    Maher, M.L. (1994). Multimedia Design Databases, Proceedings of 1994 Cadex Conference, Sydney. 
+                    <br><br>
+                    Maher, M.L. (1994). Issues related to multimedia case-based design: What goes in a design case? , Workshop Notes Case-Based Design Systems, AID'94, Laussane, pp 26-30. 
+                    <br><br>
+                    Saad, M. and Maher, M.L. (1994). Sharing design objects and design semantics, Workshop Notes A Semantic Basis for Sharing Knowledge and Data in Design, AID'94, Laussanne, pp 66-70. 
+                    <br><br>
+                    Maher, M.L. and Harwood, B. (1994). Design media management, Proceedings of Multimedia and Design Conference, Key Centre of Design Computing, University of Sydney, pp 219-232. 
+                    <br><br>
+                    Saad, M. and Maher, M.L. (1994). Multimedia and synchronous collaborative design, Proceedings of Multimedia and Design Conference, Key Centre of Design Computing, University of Sydney, pp 103-119.                  
+                    </p>
+                </div>
+                <div u="thumb">1994</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                       <b>Book s: </b>
+                       Gero, J. S. and Maher, M. L. (eds) (1993). Modeling Creativity and Knowledge-Based Creative Design, Lawrence Erlbaum Associates 
+                       <br><br>
+                       <b>Journal and Conference Papers: </b>
+                       <br><br>  
+                       Maher, M.L. and Zhang, D.M. (1993). CADSYN: A Case-Based Design Process Model, (AI EDAM) Special Issue on Case-Based Design Systems, Academic Press 7(2): 97-110. 
+                       <br><br> 
+                        Maher, M.L., Gero, J.S., and Saad, M. (1993). Synchronous support and emergence in collaborative CAAD, in Flemming and Van Wyck (eds.) CAAD Futures'93, North-Holland, pp 455-470. 
+                       <br><br> 
+                        Saad, M. and Maher, M.L. (1993). A computational model for synchronous collaborative design, AAAI Workshop on AI in Collaborative Design, pp 191-206. 
+                       <br><br> 
+                        Maher, M.L. and Kundu, S. (1993). Adaptive design using a genetic algorithm, IFIP WG5.2 Working Comference on Formal Design Methods, 211-228. 
+                       <br><br> 
+                        Zhang, D.M. and Maher, M.L. (1993). Using case-based reasoning for the synthesis of structural systems, Knowledge-Based Systems in Civil Engineering, IABSE, pp 143-152. 
+                       <br><br> 
+                        Maher, M.L. (1993). Machine Learning in Engineering Design: Learning Generalized Design Prototypes From Examples, in Oliveira, A. and Tasso, C. (eds.) Development of Knowledge-Based Systems for Engineering, Springer Verlag. 
+                       <br><br> 
+                        Maher, M.L. and Li, H. (1993). Adapting conceptual clustering for preliminary structural design, Computing in Civil Engineering, ASCE. 
+                       <br><br> 
+                        Zhao, F. and Maher, M.L. (1993). Computer supported creative structural design, Computing in Civil Engineering, ASCE. 
+                       <br><br> 
+                        Maher, M.L. and Li, H. (1993). Learning empirical knowledge to assist preliminary design, Mathur, K.S., Betts, M.P., and Tham, K.W. eds Management of Information Technology for Construction, World Scientific and Global Publications Services, Singapore pp 301-318. 
+                       <br><br> 
+                        Maher, M.L. (1993). Representing design semantics in remote collaborative design, Proceedings of Workshop on Computational Support for Distributed Collaborative Design, Key Centre of Design Computing, University of Sydney, pp91-102. 
+                       <br><br> 
+                        Maher, M.L. and Rutherford, J. (1993). Video conferencing and CAD, Proceedings of 27th Annual Conference Australia and New Zealand Architectural Science Association, pp 113-118. 
+                       <br><br> 
+                        Maher, M.L. (1993). Multimedia systems for design, ACADS Quarterly, November, Number 79, pp16-17. 
+                       <br><br> 
+                        Maher, M.L. (1993). Representing design semantics in remote collaborative design, in Computational Support for Distributed Collaborative Design, Workshop Notes, Key Centre of Design Computing, Inversity of Sydney  
+ 
+                    </p>
+                </div>
+                <div u="thumb">1993</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Book Chapters: </b>
+                    <br><br>
+                    Fenves, S.J., Flemming, U., Hendrickson, and Maher, M.L. (1992). Performance Evaluation In An Integrated Software Environment For Building Design and Construction Planning, in Y. Kalay(ed.), Evaluating and Predicting Design Performance, John Wiley & Sons, New York, pp 159-169. 
+                    <br><br>                    
+                    Maher, M. L. (1992). Frame-based reasoning, in R. Allen (ed. ), Expert Systems For Civil Engineers:Knowledge Representation, ASCE, New York, pp 60-79. 
+                    <br><br>
+                    Fenves, S. J., Flemming, U., Hendrickson, C. T., Maher, M. L. and Schmitt, G. (1992). Prototype environment for integrated design and construction planning of buildings, in B. H. V. Topping (ed.), Optimization and Decision Support in Civil Engineering, Kluwer Academic. 
+                    <br><br>
+                    Maher, M. L. (1992). Expert systems for engineering design, in B. H. V. Topping (ed. ), Optimization and Decision Support in Civil Engineering, Kluwer Academic Publishers.  
+                    <br><br>   
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M.L. and Li, H. (1992). Automatically learning preliminary design knowledge from design examples, MicroComputers in Civil Engineering, 7: 73-80. 
+                    <br><br>
+                    Zhao, F. and Maher, M.L. (1992). Using network-based prototypes to support creative design by analogy and mutation,in J.S. Gero (ed), AI in Design 92, Kluwer Academic, pp 773-794. 
+                    <br><br>
+                    Zhao, F. and Maher, M.L. (1992). Analogy and Mutation as Strategies for Creative Design, in JS Gero (ed) , Proceedings of Second International Roundtable Conference on Computational Models of Creative Design, Heron Island, Australia. 
+                    <br><br>
+                    Maher, M.L. (1992). Automated knowledge acquistion of preliminary design concepts, ASCE 8th Conference on Computing in Civil Engineering, Dallas, Texas.  
+                    <br><br>
+                    Maher, M. and Alem, L. (1992). Modelling design exploration using a genetic metaphor, Working Paper, Department of Architectural and Design Science, University of Sydney. 
+                    <br><br>
+                    Zhang, D.M. and Maher, M.L. (1992). The transformation process in case-based design problem solving, Working Paper, Department of Architectural and Design Science, University of Sydney. 
+                    <br><br>
+                    Maher, M.L. and Saad, M. (1992). Development of a multi-user collaborative design environment, Proceedings of IMechE-SERC Expert Meeting, St. Albans, U.K. 
+                    <br><br>
+                    Maher, M.L. and Rosenman, M. (1992). Integrated computer-based design, ACADS Quarterly. 
+                    <br><br>
+                    Maher, M.L. and Saad, M. (1992). Computer support for synchronous collaborative design, in Proceedings of Conference on the Impact of Computers on Design, Key Centre of Design Quality, University of Sydney, pp. 61-76. 
+                    <br><br>
+                    Maher, M.L. and Zhang, D. (1992). CADSYN: Using Case and Decomposition Knowledge for Design Synthesis, Japan-US Workshop on Artificial Intelligence Applications in Civil and Structural Engineering, University of Tokyo. 
+                    <br><br>
+                    Maher, M.L. and Saad, M. (1992). Computer Support for Synchronous Collaborative Design, Transactions of Mechanical Engineering, Institution of Engineers Australia, Vol. ME17 No. 4. 
+
+
+                    </p>
+                </div>
+                <div u="thumb">1992</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Alem, L. and Maher, M. L. (1991). Using conceptual clustering to learn about function, structure and behavior in design, in Herin-Aime, D., Dieng, R., Regourd, J.P., and Angoujard, J.P. (eds.) Knowledge Modeling and Expertise Transfer, IOS: Amsterdam, pp. 163-177.  
+                    <br><br>
+                    Maher, M. L., Zhang, D. M. (1991). CADSYN: Using case and decomposition knowledge for design synthesis, in J. S. Gero (ed. ), Artificial I ntelligence in Design91, Butterworth-Heinemann, Oxford.  
+                    <br><br>
+                    Gero, J.S. and Maher, M.L. (1991). Mutation and analogy to support creativity in computer-aided design, CAAD Futures '91, ETH-Zurich. 
+                    <br><br>
+                    Maher, M.L. and Meyer, S. (1991). Representing design synthesis knowledge in expert systems, Europia '91, Athens, pp 135-149.  
+                    <br><br>
+                    Maher, M. L. and Alem, L. (1991). Learning generalised design prototypes, IJCAI Knowledge Acquisition Workshop, Sydney, pp. 17-33 .  
+                    <br><br>
+                    Maher, M.L. (1991). Machine Learning in Design Expert Systems, Liebowitz, J. (ed),Expert Systems World Congress Proceedings , Pergamon Press, 728-736. 
+                    <br><br>
+                    Alem, L. and Maher, M.L. (1991). A model of creative design using a genetic metaphor, Symposium on AI Reasoning and Creativity, Queensland, pp 12-15. 
+                    <br><br>
+                    Maher, M. L., (1991). Structural design using optimization and knowledge-based techniques, ASCE7th Conference on Computing in Civil Engineering, Washington DC, pp 139-149.  
+                    <br><br>
+                    Maher, M. L., Alem, L., and Li, H., (1991). Automatically developing structural design knowledge-bases using machine learning, IV-ICCCBE, Tokyo.                      
+                    </p>
+                </div>
+                <div u="thumb">1991</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers: </b>
+                    <br><br>
+                    Maher, M. L. and Gero, J. S. (1990). Theoretical requirments for creative design by analogy, in P. Fitzhorn (ed. ), Proc. First International Workshop on Formal Methods in Engineering Design, Manufacturing and Assembly, Colorado State University, Fort Collins, pp 19-27. 
+                    <br><br>
+                    Maher, M. L. (1990). Process models of design synthesis, AI Magazine, 11(4), 49-58. 
+                    </p>
+                </div>
+                <div u="thumb">1990</div>
+            </div>
+
+            <div>
+                <div id="pub_para">
+                    <p>
+                     <b>Book Chapters:</b>
+                     <br><br>
+                     Mohan, S. and Maher, M. L. (eds) (1989). Expert Systems for Civil Engineers: Education, American Society of Civil Engineers, New York.  
+                     <b>Journal and Conference Papers: </b>
+                     <br><br>
+                     Fenves, S.J., Hendrickson, C., Maher, M.L., Flemming, U. and Schmitt, G. (1989). An integrated software environment for building design and construction, CAD, 22(1): 27-36. 
+                     <br><br>
+                    Maher, M. L. (1989). Synthesis and evaluation of preliminary designs, in J. S. Gero (ed. ), Artificial Intelligence in Design, Springer Verlag/CMP, Amsterdam. pp. 3-14.  
+                     <br><br>
+                    Maher, M. L. and Zhao, F. (1989). Dynamic associations fo creative engineering design in J. S. Gero and M. L. Maher (eds ), International Round-Table Conference on Modeling Creativity and Knowledge-Based Creative Design, Department of Architectural and Design Science, University of Sydney. (Revised version in J. S. Gero and M. L. Maher (eds), (1993). Modeling Creativity and Knowledge-Based Creative Design, Lawrence Elbaum Associates. 
+                     <br><br>
+                    Hendrickson, C. and Maher, M. L. (1989). Issues in computer-based design/construction integration, ASCE 1989 Construction Congress, San Francisco, CA.  
+                     <br><br>
+                    Maher, M. L. (1989). Strucutral design by hierarchical decomposition, Proceedings of the Sixth Conference on Computing in Civil Engineering, American Society of Civil Engineers, Atlanta, Georgia, October.  
+                     <br><br>
+                    Maher, M. L. (1989). Synthesis of structural systems, Expert Systems in Civil Engineering, IABSE Colloquium, Bergamo.  
+                     <br><br>
+                    Maher, M. L. (1989). Building design using multiple expert systems, Australasian Conference on Expert Systems in Engineering, Architecture, and Construction, Sydney.  
+                     <br><br>
+                    Maher, M. L. and Lu, M-T. (1989). Heuristicallly generating multiple optimal beam designs, Australasian Conference on Expert Systems in Engineering, Architecture, and Construction, Sydney.
+                     <br><br>
+                    </p>
+                </div>
+                <div u="thumb">1989</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Book Chapters:</b>
+                     <br><br>
+                     Maher, M. L. (1988). HI-RISE: An expert system for preliminary structural design, in M. Rychener (ed. ), Expert Systems for Engineering Design, MacMillan, New York. 
+                     <br><br>   
+                    Maher, M. L., Fenves, S. J. and Garrett, J. H. Jr. (1988). Expert systems for structural design in Hojatt Adeli (ed. ), Expert Systems in Construction and Structural Engineering, Chapman & Hall.  
+                    <b>Journal and Conference Papers:</b>
+                    <br><br>
+                    Maher, M. L. (1988). Expert systems for structural sesign, Journal of Computing in Civil Engineering, 1(4): 270-283.
+                    <br><br>
+                    (Also published, in D. T. Pham (ed. ), Expert Systems in Engineering, IFS Publications/Springer-Verlag, 147-161.) 
+                    <br><br>
+                    Jain, D. and Maher, M. L. (1988). Combining expert systems and CAD techniques, Proceedings of Australian Joint Artificial Intelligence Conference, Sydney, Australia, November 1987.  
+                    <br><br>
+                    (Also in J. S. Gero,and R. Stanton, (eds), Artificial Intelligence Developments and Applications, North Holland, Amsterdam.) 
+                    <br><br>
+                    Gero, J. S., Maher, M. L. and Zhang, W. (1988). Chunking structural design knowledge as prototypes, in J. S. Gero (ed. ), Artificial Intelligence Engineering: Design, Elsevier/Computational MechanicsPublications. Amsterdam. 
+                    <br><br>
+                    Gero, J. S. and Maher, M. L. (1988). Future roles of knowledge-based systems in the design process, in T. Mauer and H. Wagter (eds), Computer Aided Architectural Design Futures 87, Elsevier, Amsterdam. 
+                    <br><br>
+                    Maher, M. L., Zhao, F. and Gero, J. S. (1988). Creativity in humans and computers: a discussion of creativity in J. S. Gero, T. Oksala (eds), Computer aided architectural design, Knowledge Based Design in Architecture, Acta Polytechnica Scandinavica, Helsinki, Finland.  
+                    <br><br>
+                    Zhao, F. and Maher, M. L. (1988). Using analogical reasoning to design buildings, Engineering with Computers 4 :107-119.  
+                    <br><br>
+                    Maher, M. L. (1988). Engineering design synthesis: a domain independent representation, Artificial Intelligence for Engineering Design, Analysis and Manufacturing 1(3): 207-213. 
+                    <br><br>
+                    Jain, D. and Maher, M. L. (1988). Issues in combining expert systems and CAD techniques, Microcomputers in Civil Engineering. 
+                    <br><br>
+                    Fenves, S. J., Hendrickson, C. T., Maher, M. L., Rehak, D. R. and Thewalt, C. (1988). Two undergraduate courses in computer-aided engineering, Engineering Education. 
+                    <br><br>
+                    Fenves, S. J., Flemming, U., Hendrickson, C., Maher, M. L. and Schmitt, G. (1988). An integrated software environment for building design and construction, Proceedings of the Fifth Conference on Computing in Civil Engineering, American Society of Civil Engineers, Alexandria, Virginia.  
+                    <br><br>
+                    Fenves, S. J., Hendrickson, C. T., Maher, M. L., Rehak, D. R. and Thewalt, C. (1988). Two undergraduate courses in computer-aided engineering, Proceedings of the 1988 ASME Pressure Vessels and Piping Conference, Pittsburgh, PA.  
+                    <br><br>
+                    Gero, J. S. and Maher, M. L. (1988). Designing with prototypes, Proceedings of the ICED 1988 International Conference on Engineering Design, Budapest.   
+                    </p>
+                </div>
+                <div u="thumb">1988</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Books:</b>
+                     <br><br>
+                     Maher, M. L. (ed. ) (1987). Expert Systems for Civil Engineers: Technology and Application, American Society of Civil Engineers, New York.  
+                     <br><br>
+                    <b>Book Chapters:</b>
+                     <br><br>
+                     Maher, M. L. and Allen, R. H. (1987). Expert system components, in M. L. Maher (ed. ), Expert Systems for Civil Engineers: Technology and Application, American Society of Civil Engineers, New York.  
+                     <br><br>   
+                    Maher, M. L. (1987). Expert systems in structural engineering, in M. L. Maher (ed. ), Expert Systems for Civil Engineers: Technology and Application, American Society of Civil Engineers, New York.  
+                    <br><br>
+                    <b>Journal and Conference Papers:</b>
+                     <br><br>
+                     Maher, M. L. and Longinos, P. (1987). Development of an expert system shell for engineering design, The International Journal of Applied Engineering Education , 3(3). 
+                     <br><br>
+                    Maher, M. L. and Zhao, F. (1987). Using experience to plan the synthesis of new designs, in J. S. Gero (ed. ), Expert Systems in Computer Aided Design, North-Holland, Amsterdam, 349-370.
+                    </p>
+                </div>
+                <div u="thumb">1987</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                     <b>Books:</b>
+                     <br><br>
+                     Kostem, C. and Maher, M. L. (eds) (1986). Expert Systems in Civil Engineering, American Society of Civil Engineers, New York  
+                     <br><br>
+                     <b>Journal and Conference Papers:</b>
+                    <br><br>
+                    Sriram, D. and Maher, M. L. (1986). Representation and use of constraints in structural design, in D. Sriram, R. Adey (eds), Applications of Artificial Intelligence to Engineering Problems, Computational Mechanics Publications, Southampton, UK. 
+                    <br><br>
+                    Maher, M. L. and Zhang, W. (1986). Graphics based preliminary stuctural design, Proceedings of the Fourth Conference on Computing in Civil Engineering, American Society of Civil Engineers, Boston MA. 
+                    <br><br>
+                    Maher, M. L. and Fenves, S. J. (1986). Research in expert systems for structural design, IEEE Computer, March.  
+                    <br><br>
+                    Maher, M. L., Zhang, W. and Oppenheim, I. J. (1986). Educational software for structural engineering, Proceedings Second AEP Conference, San Diego CA, April.  
+                    <br><br>
+                    Maher, M. L. (1986). Problem solving using expert system techniques, in C. Kostem, M. L. Maher (eds), Expert Systems in Civil Engineering, American Society of Civil Engineers, New York. 
+                    <br><br>
+                    Oppenheim, I. J. and Maher, M. L. (1986). Control And strategy mining robotics, Proceedings of the Second International Conference on Innovative Mining Systems, IEEE.  
+                    </p>
+                </div>
+                <div u="thumb">1986</div>
+            </div>
+            
+            <div>
+                 <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers:</b>
+                    <br><br>
+                    Fenves, S. J., Maher, M. L. and Sriram, D. (1985). Knowledge-based expert systems in civil engineering, IABSE Journal, J-29/85.  
+                    <br><br>
+                    Maher, M. L. (1985). HI-RISE and beyond: directions for expert systems in design, CAD Journal, 17(9). 
+                    <br><br>
+                    Sriram, D., Maher, M. L. and Fenves, S. J. (1985). Knowledge-based expert systems in structural design, Computers And Structures, 20(1-3). 
+                    <br><br>
+                    Maher, M. L. , Fenves, S. J. (1985). HI-RISE: Knowledge-based expert system for the preliminary structural design of high rise buildings, in J. S. Gero (ed. ), Knowledge Engineering in Computer-Aided Design, North Holland, Amsterdam. 
+                    <br><br>
+                    Maher, M. L., Oppenheim, I. J. and Rehak, D. R. (1985). Computer developments for mining robotics, Proceedings of Second Conference on Robotics in Construction, Carnegie Mellon University, Pittsburgh, PA.  
+                    <br><br>
+                    Maher, M. L. and Howard, H. C. (1985). Accessing design databases from expert systems, SIGART Newsletter, April.                    
+                    </p>
+                </div>
+                <div u="thumb">1985</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers:</b>
+                    <br><br>
+                    Maher, M. L., Sriram, D. and Fenves, S. J. (1984). Tools and techniques for knowledge-based expert systems for engineering design, Advances in Engineering Software, 6(4). 
+                    <br><br>
+                    Fenves, S. J., Maher, M. L. and Sriram, D. (1984). Knowledge-based expert systems in civil engineering, Proceedings of the Third ASCE Conference on Electronic Computations, San Deigo, California.  
+                    <br><br>
+                    Maher, M. L. and Fenves, S. J. (1984). HI-RISE: A knowledge-based expert system for the preliminary structural design of high rise buildings, Report No. R-85-146, Department of Civil Engineering,Carnegie Mellon University.  
+                    </p>
+                </div>
+                <div u="thumb">1984</div>
+            </div>
+            
+            <div>
+                <div id="pub_para">
+                    <p>
+                    <b>Journal and Conference Papers:</b>
+                    <br><br>
+                     Fenves, S. J., Sriram, D., Maher, M. L. and Rychener, M. (1983). Application of expert systems in structural engineering, Proceedings of the Conference on Artificial Intelligence, Oakland University, Rochester, Michigan.  
+                         <br><br>
+                     Sriram, D., Tyle, N., Maher, M. L., Barnes, R., Rychener, M. and Fenves, S. J. (1983). Knowledge-based expert systems for engineering applications, Proceedings of the IEEE International Conference on Systems, Man, and Cybernetics, India. 
+                    </p>
+                </div>
+                <div u="thumb">1983</div>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        
+
+<style>
+    
+
+            .jssort13 {
+                position: absolute;
+                width: 100px;
+                height: 150px;
+            }
+
+                .jssort13 .p {
+                    POSITION: absolute;
+                    WIDTH: 100px;
+                    HEIGHT: 30px;
+                    TOP: 0;
+                    LEFT: 0;
+                    padding: 0px;
+                }
+
+                .jssort13 .w {
+                    cursor: pointer;
+                    position: absolute;
+                    WIDTH: 98px;
+                    HEIGHT: 29px;
+                    border: 0px solid gray;
+                    top: -1px;
+                    left: 0px;
+                }
+
+                .jssort13 .pav .w, .jssort13 .pdn .w {
+                    border-right: 0px solid #fff;
+                }
+
+                .jssort13 .c {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #000;
+                    font-size: 15px;
+                }
+
+                .jssort13 .p .c, .jssort13 .pav:hover .c {
+                    background-color: #00afef;
+                }
+
+                .jssort13 .pav .c, .jssort13 .p:hover .c {
+                    background-color:#ccc;
+                }
+        </style>
+
+        <div u="thumbnavigator" class="jssort13" style="left: 0px; top: 0px;">
+            
+            <div u="slides" style="cursor: default; top:0px; left:0px; border-top: 0px solid gray;">
+                <div u="prototype" class="p">
+                    <div class=w><div u="thumbnailtemplate" class="c"></div></div>
+                </div>
+            </div>
+           
+        </div>
+
+        <script>
+            jssor_slider3_starter('slider3_container');
+        </script>
+    </div>
+  
+</div> 
+  
+  <!-- 
+
+    +--+--+--------+--+--+
+    |  |  | FOOTER |  |  |
+    +--+--+--------+--+--+
+  
+    -->
+
+<div id="footer">
+    <div class="container">
+	<div class="row">
+            <div class="column col-md-3"  > 
+                <!-- 
+                +----------+
+                |   Call   |
+                +----------+
+                -->
+                <img src="images/icon-call.png" ALIGN=LEFT style="padding-right: 0.5em; width: 25%;">  <!-- Icon For Call -->
+                <h4><span >Call</span></h4> 
+                <h6><span>T: 704-687-1940</span></h6>  <!-- Contact Number For Call -->
+                                   
+            </div>					
+            <div class="column col-md-3">
+                <!--
+                +---------------+
+                |    Contact    |
+                +---------------+
+                -->
+                <img src="images/icon-email.png" ALIGN=LEFT style="padding-right: 0.5em; width: 25%;"> 	 <!-- Icon For Contact -->			                               
+                <h4><span>Contact</span></h4>						
+                <h6><span><a href="mailto:m.maher@uncc.edu">m.maher@uncc.edu</a></span></h6>  <!-- E-mail Address of Professor Mary Lou Maher -->
+					
+            </div>
+            <div class="column col-md-3">
+                <!--
+                +---------------+
+                |   Follow Me   |
+                +---------------+
+                -->                                                    
+                <img src="images/icon-fb.png" ALIGN=LEFT style="padding-right: 0.5em; width: 25%;">    <!-- Icon For Follow Me -->
+                <h4><span >Follow Me</span></h4>				
+                <div>                                  
+                    <a href="https://www.linkedin.com/pub/mary-lou-maher/15/b13/8ab" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a> &nbsp;  <!-- Link to LinkedIn Profile -->                                                 
+                    <a href="https://scholar.google.nl/citations?user=2COOamwAAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap fa-lg"></i></a> &nbsp;   <!-- Link to Google Scholar Profile --> 
+                    <a href="http://researchgate.net/profile/Mary_Maher" target="_blank"><img src="images/rg.png"></a>   <!-- Link to Twitter Profile -->                                               
+                                     
+                </div>	                
+            </div>                               
+            <div class="column col-md-3">  
+                <!--
+                +-----------+
+                | Copyright |
+                +-----------+
+                -->
+                <h4><span>&COPY; 2015 Mary Lou Maher</span></h4>  <!-- Copyright Mention  -->
+                <h6><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed by: Jin Goog Kim</span></h6>  <!-- Designed By Mention -->                                               
+                <h6><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed by: Shivam Tundele</span></h6>  <!-- Developed By Mention -->
+					
+            </div>			
+        </div>                            
+    </div>	
+</div> 
+
+</div>
+    
+</body>
+</html>

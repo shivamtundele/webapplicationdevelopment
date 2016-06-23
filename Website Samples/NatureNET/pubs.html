@@ -1,0 +1,257 @@
+<!-- 
+
++--+--+--------------+--+--+
+|  |  |  PUBLICATION |  |  |
++--+--+--------------+--+--+
+
+Guide to Edit This Page,
+
+1. Copy Paste This Below Indicated to Add A New Publication,
+
+    <div class="main">
+    <table class="pubs-table">
+        <tr><td>
+                <p><img src="PUT IMAGE HERE FOR A PUBLICATION" class="pubs-table-image"</p>
+            </td>
+            <td>
+                <ul class="pubs-table-ul">
+                    <li><span class="pubs-ul-first">HEADING OF THE PUBLICATION </span> <span class="pubs-ul-second">SUB HEADING OF THE PUBLICATION</span></li>
+                    <li><span class="pubs-ul-third">DESCRIPTION OF PAPER</span></li>
+                    <li>
+                        <span id="toggle-first" class="pubs-ul-forth">Abstract <span class="glyphicon glyphicon-plus"></span></span>
+                        <span>&nbsp; &nbsp; BibTex <span class="glyphicon glyphicon-plus"></span></span>
+                    </li>
+                </ul>
+            </td>
+        </tr>        
+    </table>
+    <div class="toggle-div" id="toggle-div-first">        
+        <ul class="toggle-ul">            
+            <li>
+              ABSTRACT OF THE PAPER
+            </li>
+        </ul>        
+    </div>
+    </div>
+   
+2.  Each Abstract with plus sign, as you can see on page is uniquely defined in script/custom.js file according to its division number. 
+    Please update toggle-*number* corresponding to sequence of div everytime here and in custom.js both.
+    Example, if it is your FIFTH publication, then, do like this for "toggle: IDs with numbers,
+    a. toggle-fifth
+    b. toggle-div-fifth
+
+    Add corresponding div in custom.js also.
+
+-->
+
+
+<!-- 
+
++--+--+--------+--+--+
+|  |  | HEADER |  |  |
++--+--+--------+--+--+
+
+-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--
+        +------------------+
+        | WEBSITE TITLE    |
+        +------------------+
+        -->
+        <title>NatureNet</title><!-- Edit between <title> tags to change website's name. -->
+        
+        <!--
+        +---------------------------------------+
+        | WEBSITE RESOURCES FONTS, CSS, SCRIPTS |
+        +---------------------------------------+
+        -->
+        <script src="script/jquery.min.js" type="text/javascript"></script> <!-- Includes  jQuery Javascript -->
+        <script src="script/custom.js" type="text/javascript"></script>  <!-- Includes Custom Javascript -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- Includes BootStrap's online style sheet -->
+        
+        <link href="css/style.css" type="text/css" rel="stylesheet"> <!-- This the Main CSS file for the Website -->
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />   <!-- Favicon of the Website -->  
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli"> <!-- Includes Fonts used in the Website from online Google API -->
+        <link rel="stylesheet" href="css/font-awesome.css"> <!-- Includes Font Awesome Shttps://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.csstyling Sheet For Icons -->
+        
+    </head>
+    <body>
+        <header class="clearfix">
+            
+            <div class="wrap">
+            <div id="logo">
+                    <!--
+                    +--------------------------+
+                    | MAIN LOGO OF THE WEBSITE |
+                    +--------------------------+
+                    -->
+                    <b>NatureNet</b> <!-- Change 'Image Path'/'Text' here to Change the Main Logo of the Website -->
+                    
+            </div>
+            
+             <!--
+            +----------------------------------------+
+            |            NAVIGATION MENU             |
+            +----------------------------------------+
+            | Includes Links To All The Other Pages. |
+            +----------------------------------------+
+            -->
+            <nav id="prim-nav">
+                <ul>
+                    
+                    <li><a href="home.html"><b>HOME</b></a></li> <!-- Link to Home Page -->
+                    <li><a href="people.html"><b>PEOPLE</b></a></li>  <!-- Link to People Page -->
+                    <li><a style="color:#d58512;" href="pubs.html"><b>PUBLICATIONS</b></a></li> <!-- Link to Publication Page -->
+                    <li><a href="videos.html"><b>VIDEOS</b></a></li>  <!-- Link to Videos Page -->
+                    <li><a href="research.html"><b>RESEARCH GOALS</b></a></li>  <!-- Link to Research Page -->
+                    
+                </ul>
+            </nav>       
+            </div>           
+        </header>    
+<!-- 
+
++--+--+--------------+--+--+
+|  |  | MAIN CONTENT |  |  |
++--+--+--------------+--+--+
+-->
+
+
+
+<hr id="people-line">
+<div class="container">
+   
+    <div>
+        <h3><B>PUBLICATION</b></h3><!-- Main Heading -->
+    </div>
+ 
+ <!--
++------------------+
+|    PASTE HERE    |
++------------------+
+-->
+    
+    
+ <!--YEAR-->
+    <div>
+        <p><b>2014</b></p>
+    </div>
+    <!-- Block for first -->
+    <div class="main">
+    <table class="pubs-table">
+        <tr><td>
+                <p><img src="images/paper-1.JPG" class="pubs-table-image"></p> <!-- Image Ref: Paper as written below. -->
+            </td>
+            <td>
+                <ul class="pubs-table-ul">
+                    <li><span class="pubs-ul-first">NatureNet: </span> <span class="pubs-ul-second">A Model for Crowdsourcing the Design of a Citizen Science Socio-Technical System</span></li>
+                    <li><span class="pubs-ul-third">Maher, ML., Preece, J., Yeh, T., Boston, C., Grace, K., Pasupuleti, A., Stangl, A. (2014) NatureNet: A Model for Crowdsourcing the Design of Citizen
+                            Science Systems, Poster Abstract in Proceedings of CSCW 2014.</span></li>
+                    <li>
+                        <span id="toggle-first" class="pubs-ul-forth">Abstract <span class="glyphicon glyphicon-plus"></span></span>
+                        
+                    </li>
+                </ul>
+            </td>
+        </tr>        
+    </table>
+    <!-- This is Hidden -->
+    <div class="toggle-div" id="toggle-div-first">        
+        <ul class="toggle-ul">            
+            <li>
+                Crowdsourcing design has been applied in various areas of
+                graphic design, software design, and product design. This
+                paper draws on those experiences and research in diversity,
+                creativity, and motivation to present a model for
+                crowdsourcing the design of a socio-technical system for a
+                citizen science community. NatureNet is a tabletop device
+                with several client applications available in a nature park
+                setting. Park visitors are encouraged to participate in the
+                design of the tasks and the interaction design as well as
+                collect bio-diversity data. Crowdsourcing design for citizen
+                science of this kind serves two purposes: to increase the
+                motivation to participate and to increase creativity through
+                diversity of design expertise. This paper presents the theory
+                behind our model of crowdsourcing the design of a citizen
+                science socio-technical system, the initial design of
+                NtureNet system, and results from our initial design studies.
+                Our results reinforce our assumptions that crowdsourcing
+                design can introduce more diversity of design ideas and
+                generate enthusiasm for citizen science.
+            </li>
+        </ul>        
+    </div>
+    </div>
+      
+    <!-- Block for second -->
+     <div class="main">
+    <table class="pubs-table">
+        <tr><td>
+                <p><img src="images/paper-2.jpg" class="pubs-table-image"></p> <!-- Image Ref: http://icons.iconarchive.com/icons/dapino/people/256/brown-man-icon.png -->
+            </td>
+            <td>
+                <ul class="pubs-table-ul">
+                    <li><span class="pubs-ul-first">A process model for crowd-sourcing design:</span> <span class="pubs-ul-second">A case study in citizen science</span></li>
+                    <li><span class="pubs-ul-third">Grace, K., Maher, M. L., Preece, J., Yeh, T., Stangl, A., & Boston, C. (2014). A process model 
+                            for crowd-sourcing design: A case study in citizen science. In Gero, J.S. and Hanna, S (eds) Proceedings of Design Computing 
+                            and Cognition 2014, University College London, pp 263--282.</span></li>
+                    <li>
+                        <span id="toggle-second" class="pubs-ul-forth">Abstract <span class="glyphicon glyphicon-plus"></span></span>
+                       
+                    </li>
+                </ul>
+            </td>
+        </tr>        
+    </table>
+    <!-- This is Hidden -->
+    <div class="toggle-div" id="toggle-div-second">        
+        <ul class="toggle-ul">            
+            <li>
+            Crowdsourcing design has been applied in various areas of graphic design, soft-
+            ware design, and product design. This paper draws on those experiences and re-
+            search in diversity, creativity and motivation to present a process model for
+            crowdsourcing experience design. Crowdsourcing experience design for volunteer
+            online communities serves two purposes: to increase the motivation of partici-
+            pants by making them stakeholders in the success of the project, and to increase
+            the creativity of the design by increasing the diversity of expertise beyond experts
+            in experience design. Our process model for crowdsourcing design extends the
+            concept of a meta-design architecture in which software for online communities is
+            designed to be iteratively re-designed by its users. We describe how our model has
+            been deployed and adapted to a citizen science project where nature preserve visi-
+            tors can participate in the design of a system called NatureNet. The major contri-
+            bution of this paper is a model for crowdsourcing experience design and a case
+            study of how we have deployed it for the design and development of NatureNet. 
+            </li>
+        </ul>        
+    </div>
+    </div>
+    <!-- end -->
+</div>
+
+<!-- 
+
++--+--+--------+--+--+
+|  |  | FOOTER |  |  |
++--+--+--------+--+--+
+-->
+<footer  id="footer">
+    <div class="wrap">
+        
+        <!--
+        +------------------------------+
+        | Edit here for Footer Content |
+        +------------------------------+
+        -->
+        <br>
+        Copyright 2015 &copy; University of North Carolina at Charlotte, Human Computer Interaction Lab
+        <br>
+        Designed by: Jin Goog Kim &nbsp;&nbsp;&nbsp; Developed by: Shivam Tundele
+    </div>
+</footer>
+</body>
+</html>

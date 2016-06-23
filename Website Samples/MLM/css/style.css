@@ -1,0 +1,378 @@
+/*
++-------------------------------------+
+| COMMON CSS PROPERTIES FOR ALL PAGES |
++-------------------------------------+
+*/
+*, *:after, *:before
+{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body
+{ 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Muli', Open Sans;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom:100px;
+    
+   
+}
+
+p {
+    font-size:medium;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+.clearfix:after 
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix             
+{ 
+    *zoom: 1; 
+}   /* IE6 */
+
+*:first-child+html .clearfix 
+{ 
+    zoom: 1; 
+}   /* IE7 */
+
+
+.wrap
+{ 
+    max-width:1200px;
+    margin: 0 auto;
+    height: auto !important;
+    min-width: 980px;
+}
+header
+{ 
+    background-color: white;
+
+}
+
+#logo{
+    /*float: left;  */
+    overflow:visible;
+}
+
+#prim-nav ul{
+     margin: 2% 2% 2% 2%; 
+}
+#prim-nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 5px;
+    padding-left: 30px;
+}
+
+#prim-nav ul li a:link {
+    text-decoration: none;
+    color:#00afef;
+}
+
+#prim-nav ul li a:visited {
+    text-decoration: none;
+    color:#00afef;
+}
+
+#prim-nav ul li a:hover {
+    text-decoration: none;
+    color:black;   
+}
+
+#prim-nav ul li a:active {
+    text-decoration: none;
+    color:#00afef;
+}
+
+hr {
+    border:2px solid #4C4C4C;
+}
+
+#footer {
+    min-width:980px;
+    background:#00afef;
+    color:white; 
+    position: fixed;
+    width:100%;
+    bottom: 0px;
+    padding: 10px 0;
+    max-height: 90px;
+}
+
+#footer-inner { 
+    margin: inherit; 
+    width:100%; 
+    border-bottom-left-radius:15px; 
+    padding-left: 0%;
+    text-align:center;
+    padding:12px; 
+}
+
+#footer .column { 
+    margin:0 auto; 
+    text-align:justify; 
+    float:left; 
+    width: 25%; 
+}
+
+#footer a {
+    color:white;
+    text-decoration:none;
+}
+
+.img-circle{
+    
+}
+
+.nav-col-A {
+    width: 25%;
+}
+.nav-col-B {
+    width: 75%;
+    
+    text-align: right;
+}
+
+.nav-content-grid{
+    max-width: 100%;
+}
+.nav-content-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='nav-col-'] {
+     padding-right: 20px;
+}
+[class*='nav-col-']:last-of-type {
+     padding-right: 0;
+}
+/*
++------+
+| HOME |
++------+
+*/
+[class*='col-'] {
+    float: left;
+}
+
+.home-col-A {
+    width: 38%;
+    padding-left: 2%;
+    padding-right: 5%;
+    alignment-adjust: central;
+    
+}
+.home-col-B {
+    width: 60%;
+    padding-right: 2%;
+    padding-left: 5%;
+   
+}
+
+.home-content-grid{
+    max-width: 100%;
+}
+.home-content-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='home-col-'] {
+     padding-right: 20px;
+}
+[class*='home-col-']:last-of-type {
+     padding-right: 0;
+}
+
+.home-content-news-heading{
+    color:#00afef;
+    font-size: large;
+}
+
+#home-image-list td{
+    padding: 10px;
+}
+
+/*
++----------+
+| RESEARCH |
++----------+ 
+*/
+
+[class*='research-col-'] {
+    float: left;
+}
+
+.research-col-A {
+    width: 38%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.research-col-B {
+    width: 58%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.research-content-grid{
+    max-width: 100%;
+}
+.research-content-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='research-col-'] {
+    padding-right: 20px;
+}
+[class*='research-col-']:last-of-type {
+    padding-right: 0;
+}
+
+#research-topic ul li{
+    display:inline;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#research-topic ul li img
+{
+    cursor: pointer;
+    width: 10%;
+}
+
+#research-topic-list{
+    text-align: center;
+}
+
+/*
++----------+
+| TEACHING |
++----------+
+*/
+[class*='teaching-col-'] {
+    float: left;
+}
+
+.teaching-col-A {
+    width: 38%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.teaching-col-B {
+    width: 60%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.teaching-content-grid{
+    max-width: 100%;
+}
+.teaching-content-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='teaching-col-'] {
+    padding-right: 20px;
+}
+[class*='teaching-col-']:last-of-type {
+    padding-right: 0;
+}
+
+.teaching-content-news-heading{
+    color:#00afef;
+    font-size: large;
+}
+
+/*
++----+
+| CV |
++----+
+*/
+.cv-col-A {
+    width: 60%;
+    padding-left: 2%;
+    padding-right: 5%;
+    alignment-adjust: central;
+    
+}
+.cv-col-B {
+    width: 38%;
+    padding-right: 2%;
+    padding-left: 5%;
+   
+}
+
+.cv-content-grid{
+    max-width: 100%;
+}
+.cv-content-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='cv-col-'] {
+     padding-right: 20px;
+}
+[class*='cv-col-']:last-of-type {
+     padding-right: 0;
+}
+
+.cv-content-news-heading{
+    color:#00afef;
+    font-size: large;
+}
+
+#cv-image-list td{
+    padding: 10px;
+}
+
+#div-two,#div-three,#div-four,#div-five{
+    display:none;
+}
+
+
+/*
++-------------+
+| PUBLICATION |
++-------------+
+*/
+#slider3_container{
+    position: relative; 
+    top: 0px; 
+    left: 0px; 
+    width: 701px; 
+    height: 300px; 
+    background: #fff; 
+    overflow: visible; 
+}
+
+#pub_para{
+    margin: 10px; 
+    color: #000;
+}
+

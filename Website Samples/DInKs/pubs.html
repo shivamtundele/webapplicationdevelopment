@@ -1,0 +1,247 @@
+<!-- 
+
++--+--+--------------+--+--+
+|  |  |  PUBLICATION |  |  |
++--+--+--------------+--+--+
+
+Guide to Edit This Page,
+
+1. Copy Paste This Below Indicated to Add A New Publication,
+
+    <div class="main">
+    <table class="pubs-table">
+        <tr><td>
+                <p><img src="PUT IMAGE HERE FOR A PUBLICATION" class="pubs-table-image"</p>
+            </td>
+            <td>
+                <ul class="pubs-table-ul">
+                    <li><span class="pubs-ul-first">HEADING OF THE PUBLICATION </span> <span class="pubs-ul-second">SUB HEADING OF THE PUBLICATION</span></li>
+                    <li><span class="pubs-ul-third">DESCRIPTION OF PAPER</span></li>
+                    <li>
+                        <span id="toggle-first" class="pubs-ul-forth">Abstract <span class="glyphicon glyphicon-plus"></span></span>
+                        <span>&nbsp; &nbsp; BibTex <span class="glyphicon glyphicon-plus"></span></span>
+                    </li>
+                </ul>
+            </td>
+        </tr>        
+    </table>
+    <div class="toggle-div" id="toggle-div-first">        
+        <ul class="toggle-ul">            
+            <li>
+              ABSTRACT OF THE PAPER
+            </li>
+        </ul>        
+    </div>
+    </div>
+   
+2.  Each Abstract with plus sign, as you can see on page is uniquely defined in script/custom.js file according to its division number. 
+    Please update toggle-*number* corresponding to sequence of div everytime here and in custom.js both.
+    Example, if it is your FIFTH publication, then, do like this for "toggle: IDs with numbers,
+    a. toggle-fifth
+    b. toggle-div-fifth
+
+    Add corresponding div in custom.js also.
+
+-->
+
+
+<!-- 
+
++--+--+--------+--+--+
+|  |  | HEADER |  |  |
++--+--+--------+--+--+
+
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--
+        +------------------+
+        | WEBSITE TITLE    |
+        +------------------+
+        -->
+        <title>DInKs</title><!-- Edit between <title> tags to change website's name. -->
+        
+        <!--
+        +---------------------------------------+
+        | WEBSITE RESOURCES FONTS, CSS, SCRIPTS |
+        +---------------------------------------+
+        -->
+        <script src="script/jquery.min.js" type="text/javascript"></script> <!-- Includes  jQuery Javascript -->
+        <script src="script/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script> <!-- Includes jQuery Javascript For Home Page Image Slider -->
+        <script src="script/custom.js" type="text/javascript"></script>  <!-- Includes Custom Javascript -->
+        
+        <link href="css/style.css" type="text/css" rel="stylesheet"> <!-- This the Main CSS file for the Website -->
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />   <!-- Favicon of the Website -->  
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli"> <!-- Includes Fonts used in the Website from online Google API -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- Includes BootStrap's online style sheet -->
+        <link rel="stylesheet" href="css/font-awesome.css"> <!-- Includes Font Awesome Styling Sheet For Icons -->
+        
+    </head>
+    <body>
+        <header class="clearfix">
+            
+            <div class="wrap">
+            <div id="logo">
+                    <!--
+                    +--------------------------+
+                    | MAIN LOGO OF THE WEBSITE |
+                    +--------------------------+
+                    -->
+                    <b>DInKs</b> <!-- Change 'Image Path'/'Text' here to Change the Main Logo of the Website -->
+            </div>
+            
+             <!--
+            +----------------------------------------+
+            |            NAVIGATION MENU             |
+            +----------------------------------------+
+            | Includes Links To All The Other Pages. |
+            +----------------------------------------+
+            -->
+            <nav id="prim-nav">
+                <ul>
+                    
+                    <li><a href="home.html"><b>HOME</b></a></li> <!-- Link to Home Page -->
+                    <li><a href="people.html"><b>PEOPLE</b></a></li>  <!-- Link to People Page -->
+                    <li><a href="pubs.html"><b>PUBLICATIONS</b></a></li> <!-- Link to Publication Page -->
+                    <li><a href="videos.html"><b>VIDEOS</b></a></li>  <!-- Link to Videos Page -->
+                    <li><a href="research.html"><b>RESEARCH GOALS</b></a></li>  <!-- Link to Research Page -->
+                    
+                </ul>
+            </nav>       
+            </div>           
+        </header>   
+        
+<!-- 
+
++--+--+--------------+--+--+
+|  |  | MAIN CONTENT |  |  |
++--+--+--------------+--+--+
+-->
+
+
+
+<hr id="people-line">
+<div class="container">
+   
+    <div>
+        <h3><B>PUBLICATION</b></h3><!-- Main Heading -->
+    </div>
+ 
+ <!--
++------------------+
+|    PASTE HERE    |
++------------------+
+-->
+    
+    
+ <!--YEAR-->
+    <div>
+        <p><b>2014</b></p>
+    </div>
+    <!-- Block for first -->
+    <div class="main">
+    <table class="pubs-table">
+        <tr><td>
+                <p><img src="images/pubs1.jpg" class="pubs-table-image"></p> <!-- Image Ref: https://s-media-cache-ak0.pinimg.com/236x/64/6c/a2/646ca286f42909f60a11d651941a3be3.jpg -->
+            </td>
+            <td>
+                <ul class="pubs-table-ul">
+                    <li><span class="pubs-ul-first">Tangible Interaction Design: </span> <span class="pubs-ul-second">Can we design tangibles to enhance creative cognition?</span></li>
+                    <li><span class="pubs-ul-third">Maher, M. L., Gonzalez, A. Grace, K., Clausner, T. (2014). Tangible Interaction Design: Can we design tangibles to enhance creative cognition?. 
+                            In Gero, J.S. and Hanna, S (eds) Poster Proceedings of Design Computing and Cognition 2014, University College London.</span></li>
+                    <li>
+                        <span id="toggle-first" class="pubs-ul-forth">Abstract <span class="glyphicon glyphicon-plus"></span></span>
+                        
+                    </li>
+                </ul>
+            </td>
+        </tr>        
+    </table>
+    <!-- This is Hidden -->
+    <div class="toggle-div" id="toggle-div-first">        
+        <ul class="toggle-ul">            
+            <li>
+               There is an increasing interest in tangible interaction design comprising
+                                    graspable object technologies as interaction devices and their associated
+                                    applications. The Sifteo cubes are one of many new graspable interactive
+                                    devices that are programmable for a wide range of games and learning
+                                    applications.
+            </li>
+        </ul>        
+    </div>
+    </div>
+   
+    <!--YEAR--> 
+    <div>
+    <p><b>2008</b></p>
+    </div>
+   
+    
+    <!-- Block for second -->
+     <div class="main">
+    <table class="pubs-table">
+        <tr><td>
+                <p><img src="images/pubs2.jpg" class="pubs-table-image"></p> <!-- Image Ref: http://icons.iconarchive.com/icons/dapino/people/256/brown-man-icon.png -->
+            </td>
+            <td>
+                <ul class="pubs-table-ul">
+                    <li><span class="pubs-ul-first">The impact of tangible user interfaces on
+                    spatial cognition during collaborative design</span> <span class="pubs-ul-second"></span></li>
+                    <li><span class="pubs-ul-third">Kim, M.J. and Maher, M.L. The impact of tangible user
+                interfaces on designers spatial cognition. HCI 23, 2
+                (2008), 101-137</span></li>
+                    <li>
+                        <span id="toggle-second" class="pubs-ul-forth">Abstract <span class="glyphicon glyphicon-plus"></span></span>
+                       
+                    </li>
+                </ul>
+            </td>
+        </tr>        
+    </table>
+    <!-- This is Hidden -->
+    <div class="toggle-div" id="toggle-div-second">        
+        <ul class="toggle-ul">            
+            <li>
+            The use of tangible user interfaces in new design environments promises to
+          facilitate the designers. interaction with the design model. In order to clarify the
+          impact of tangible user interfaces we compare the design protocols of
+          collaborative design sessions using a tabletop system and tangible user interface
+          (TUI) with a typical keyboard/mouse/display graphical user interface (GUI)
+          to identify changes in designers spatial cognition. We focussed on design
+          collaboration because many tabletop systems are intended to support designers
+          in communicating and developing a shared model of the design. The results
+          reveal that the use of TUIs changed designers spatial cognition, and that these
+          changes affected the design process by increasing their problem-finding
+          behaviours leading to creative design.
+            </li>
+        </ul>        
+    </div>
+    </div>
+    <!-- end -->
+</div>
+
+<!-- 
+
++--+--+--------+--+--+
+|  |  | FOOTER |  |  |
++--+--+--------+--+--+
+-->
+<footer  id="footer">
+    <div class="wrap">
+        
+        <!--
+        +------------------------------+
+        | Edit here for Footer Content |
+        +------------------------------+
+        -->
+        Copyright 2015 &copy; University of North Carolina at Charlotte, Human Computer Interaction Lab
+        <br>
+        Designed by: Jin Goog Kim &nbsp;&nbsp;&nbsp; Developed by: Shivam Tundele
+    </div>
+</footer>
+</body>
+</html>

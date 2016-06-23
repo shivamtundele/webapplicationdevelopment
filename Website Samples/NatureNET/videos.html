@@ -1,0 +1,175 @@
+<!--
+
++--+--+--------------+--+----+
+|  |  |  VIDEOS PAGE |  |    |
++--+--+--------------+--+----+
+
+Guide to Edit This Page,
+
+Copy Paste This Indicated Below  To Add New Video,
+
+       <div class="video-div">
+        <table>
+            <tr>
+                <td>
+                    <ul class="video-ul">
+                        <li><span class="pubs-ul-first"> 
+                                                        HEADING 
+                        </span><span class="pubs-ul-second"> 
+                                                        SUB HEADING
+                        </span></li><li><span class="pubs-ul-third"> 
+                                                        
+                                                        DESCRIPTION
+                        
+                        </span></li><li><span class="pubs-ul-forth">
+                
+                                                        PAPER NAME
+                        </span></li></ul></td><td>
+                    
+                        <video width="500" height="300" controls><source src="PATH TO VIDEO" type="video/mp4"></video>
+                </td>
+            </tr>
+        </table>
+    </div> 
+
+-->
+
+
+
+<!-- 
+
++--+--+--------+--+--+
+|  |  | HEADER |  |  |
++--+--+--------+--+--+
+
+-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--
+        +------------------+
+        | WEBSITE TITLE    |
+        +------------------+
+        -->
+        <title>NatureNet</title><!-- Edit between <title> tags to change website's name. -->
+        
+        <!--
+        +---------------------------------------+
+        | WEBSITE RESOURCES FONTS, CSS, SCRIPTS |
+        +---------------------------------------+
+        -->
+        <script src="script/jquery.min.js" type="text/javascript"></script> <!-- Includes  jQuery Javascript -->
+        <script src="script/custom.js" type="text/javascript"></script>  <!-- Includes Custom Javascript -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- Includes BootStrap's online style sheet -->
+        
+        <link href="css/style.css" type="text/css" rel="stylesheet"> <!-- This the Main CSS file for the Website -->
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />   <!-- Favicon of the Website -->  
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli"> <!-- Includes Fonts used in the Website from online Google API -->
+        <link rel="stylesheet" href="css/font-awesome.css"> <!-- Includes Font Awesome Shttps://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.csstyling Sheet For Icons -->
+        
+    </head>
+    <body>
+        <header class="clearfix">
+            
+            <div class="wrap">
+            <div id="logo">
+                    <!--
+                    +--------------------------+
+                    | MAIN LOGO OF THE WEBSITE |
+                    +--------------------------+
+                    -->
+                    <b>NatureNet</b> <!-- Change 'Image Path'/'Text' here to Change the Main Logo of the Website -->
+                    
+            </div>
+            
+             <!--
+            +----------------------------------------+
+            |            NAVIGATION MENU             |
+            +----------------------------------------+
+            | Includes Links To All The Other Pages. |
+            +----------------------------------------+
+            -->
+            <nav id="prim-nav">
+                <ul>
+                    
+                    <li><a href="home.html"><b>HOME</b></a></li> <!-- Link to Home Page -->
+                    <li><a href="people.html"><b>PEOPLE</b></a></li>  <!-- Link to People Page -->
+                    <li><a href="pubs.html"><b>PUBLICATIONS</b></a></li> <!-- Link to Publication Page -->
+                    <li><a style="color:#d58512;" href="videos.html"><b>VIDEOS</b></a></li>  <!-- Link to Videos Page -->
+                    <li><a href="research.html"><b>RESEARCH GOALS</b></a></li>  <!-- Link to Research Page -->
+                    
+                </ul>
+            </nav>       
+            </div>           
+        </header>    
+       
+
+<!-- 
+
++--+--+--------------+--+--+
+|  |  | MAIN CONTENT |  |  |
++--+--+--------------+--+--+
+-->
+
+<hr id="people-line">
+<div class="container">
+    <div>
+        <h3><b>VIDEOS</b></h3> <!-- Main Heading -->
+    </div>
+ 
+    <!--
+    +------------+
+    | PASTE HERE |
+    +------------+
+    -->
+
+    <!-- First Block -->
+    <div class="video-div">
+        <table>
+            <tr>
+                <td>
+                    <ul class="video-ul">
+                        <li><span class="pubs-ul-first">NatureNet:</span><span class="pubs-ul-second"> Table-top Device</span></li>
+                        <li><span class="pubs-ul-third"> This is a short introduction
+                                video of the NatureNet table-top device. The video shows how a user
+                                can interact with the NatureNet system using table-top device's touchscreen 
+                                input.                              
+                            </span>
+                        </li>
+                        <li><span class="pubs-ul-forth">PAPER - NatureNet: A Model for Crowdsourcing the Design of a Citizen Science Socio-Technical System.</span></li>
+                    </ul>
+                </td>
+                <td>
+                    
+                    <video width="500" height="300" controls><source src="videos/NatureNet.mp4" type="video/mp4"></video>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- 
+
++--+--+--------+--+--+
+|  |  | FOOTER |  |  |
++--+--+--------+--+--+
+-->
+<footer  id="footer">
+    <div class="wrap">
+        
+        <!--
+        +------------------------------+
+        | Edit here for Footer Content |
+        +------------------------------+
+        -->
+        <br>
+        Copyright 2015 &copy; University of North Carolina at Charlotte, Human Computer Interaction Lab
+        <br>
+        Designed by: Jin Goog Kim &nbsp;&nbsp;&nbsp; Developed by: Shivam Tundele
+    </div>
+</footer>
+</body>
+</html>
